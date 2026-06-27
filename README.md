@@ -174,7 +174,7 @@ low resolution + atmosphere + memory + lingering feeling
 
 ## 9. Streamlit Demo
 
-Live demo: [https://ecmsmrpxk8qqtuhvtivnly.streamlit.app/](https://ecmsmrpxk8qqtuhvtivnly.streamlit.app/)
+Live demo: [https://sensory-atlas.streamlit.app/](https://sensory-atlas.streamlit.app/)
 
 Portfolio copy:
 
