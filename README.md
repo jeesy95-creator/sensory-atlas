@@ -12,6 +12,14 @@ People often describe taste, scent, texture, and atmosphere indirectly:
 
 Sensory Atlas turns that kind of expression into axes such as temperature, texture, light, motion, time, atmosphere, density, rendering, and organic/mineral character.
 
+```text
+User metaphorical sensory language
+→ sensory parser
+→ sensory objects
+→ sensory axes
+→ future recommendation interface
+```
+
 ## MVP Scope
 
 - Load and validate `data/sensory_objects.jsonl`
@@ -91,6 +99,20 @@ outputs/eval_report.md
 outputs/eval_report_blind.md
 outputs/eval_report_holdout.md
 ```
+
+## Streamlit Demo
+
+Run:
+
+```bash
+streamlit run app/streamlit_app.py
+```
+
+Tabs:
+
+- Parse Demo
+- Evaluation Dashboard
+- Ontology Browser
 
 ## Evaluation Strategy
 
