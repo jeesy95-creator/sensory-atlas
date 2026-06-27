@@ -72,4 +72,5 @@ class ParserOutput(BaseModel):
     axes: CoreAxes
     interpretation_summary: str
     confidence: float = Field(ge=0.0, le=1.0)
+    low_confidence: bool = False
     parser_version: str

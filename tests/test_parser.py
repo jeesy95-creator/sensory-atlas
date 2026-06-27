@@ -12,7 +12,7 @@ def test_parser_runs_on_sample_sentence() -> None:
     assert result.axes
     assert result.interpretation_summary
     assert result.confidence >= 0
-    assert result.parser_version == "rule_based_v0.3"
+    assert result.parser_version == "rule_based_v0.5"
 
 
 def test_parser_output_contains_required_fields() -> None:
@@ -27,6 +27,7 @@ def test_parser_output_contains_required_fields() -> None:
         "axes",
         "interpretation_summary",
         "confidence",
+        "low_confidence",
         "parser_version",
     ):
         assert field in payload
@@ -52,3 +53,42 @@ def test_four_k_clarity_rendering_cue_beats_granite() -> None:
     assert result.detected_objects[0].object_id == "four_k_clarity"
     assert result.axes.rendering == "4K-like"
     assert result.detected_objects[0].object_id != "granite"
+
+
+def test_phrase_cue_cashmere() -> None:
+    objects = load_sensory_objects()
+    result = parse_sentence("목도리를 오래 감고 있다가 맡는 체온 섞인 부드러운 냄새", objects)
+    detected = {item.object_id for item in result.detected_objects[:3]}
+
+    assert detected & {"cashmere", "warm_cotton", "wool_blanket"}
+    assert result.anchor_object is not None
+    assert result.anchor_object.object_id in {"cashmere", "warm_cotton", "wool_blanket"}
+
+
+def test_food_context_not_textile() -> None:
+    objects = load_sensory_objects()
+    result = parse_sentence("버터 바른 빵이 따뜻하게 감싸는 고소한 냄새", objects)
+    detected = {item.object_id for item in result.detected_objects[:3]}
+
+    assert detected & {"butter_toast", "vanilla_cream", "roasted_almond"}
+    assert result.anchor_object is not None
+    assert result.anchor_object.object_id != "cashmere"
+
+
+def test_film_not_4k() -> None:
+    objects = load_sensory_objects()
+    result = parse_sentence("오래된 영화 필름처럼 흐릿하지만 감정이 남는 향", objects)
+
+    assert result.anchor_object is not None
+    assert result.anchor_object.object_id == "film_grain"
+    assert result.axes.rendering == "Film-like"
+    assert result.anchor_object.object_id != "four_k_clarity"
+
+
+def test_4k_not_film() -> None:
+    objects = load_sensory_objects()
+    result = parse_sentence("4K 화면처럼 초점이 맞고 입자가 다 보이는 선명한 느낌", objects)
+
+    assert result.anchor_object is not None
+    assert result.anchor_object.object_id == "four_k_clarity"
+    assert result.axes.rendering == "4K-like"

@@ -8,7 +8,8 @@ from sensory_atlas.matcher import MatchResult, match_objects
 from sensory_atlas.schema import CoreAxes, DetectedObject, ParserOutput, SensoryObject
 
 
-PARSER_VERSION = "rule_based_v0.3"
+PARSER_VERSION = "rule_based_v0.5"
+LOW_CONFIDENCE_THRESHOLD = 0.20
 AXIS_FIELDS = (
     "material",
     "temperature",
@@ -102,9 +103,9 @@ def merge_axes(matches: list[MatchResult]) -> CoreAxes:
     return CoreAxes.model_validate(payload)
 
 
-def summarize(text: str, matches: list[MatchResult], axes: CoreAxes) -> str:
+def summarize(text: str, matches: list[MatchResult], axes: CoreAxes, low_confidence: bool) -> str:
     if not matches:
-        return "이 표현은 기존 sensory object와 약하게만 연결됩니다. 새로운 감각 객체 후보로 검토할 수 있습니다."
+        return "이 표현은 기존 sensory object와 약하게만 연결됩니다. 해석 신뢰도가 낮아 사용자 확인이 필요합니다."
 
     anchor = matches[0]
     fragments: list[str] = []
@@ -123,6 +124,8 @@ def summarize(text: str, matches: list[MatchResult], axes: CoreAxes) -> str:
     supporting = [match.object.korean_label for match in matches[1:3] if match.score >= MERGE_SCORE_THRESHOLD]
     if supporting:
         summary += f" 보조적으로 {', '.join(supporting)}와 연결됩니다."
+    if low_confidence:
+        summary += " 해석 신뢰도가 낮아 사용자 확인이 필요합니다."
     return summary
 
 
@@ -135,6 +138,8 @@ def parse_sentence(
     matches = match_objects(text, sensory_objects, limit=limit)
     axes = merge_axes(matches)
     confidence = round(sum(match.score for match in matches[:3]) / max(min(len(matches), 3), 1), 2)
+    top1_score = matches[0].score if matches else 0.0
+    low_confidence = top1_score < LOW_CONFIDENCE_THRESHOLD
     if not matches:
         confidence = 0.0
 
@@ -150,7 +155,8 @@ def parse_sentence(
             else None
         ),
         axes=axes,
-        interpretation_summary=summarize(text, matches, axes),
+        interpretation_summary=summarize(text, matches, axes, low_confidence),
         confidence=min(confidence, 1.0),
+        low_confidence=low_confidence,
         parser_version=PARSER_VERSION,
     )

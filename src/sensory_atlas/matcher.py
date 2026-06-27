@@ -2,8 +2,12 @@
 
 from __future__ import annotations
 
+import json
 import re
 from dataclasses import dataclass
+from functools import lru_cache
+from pathlib import Path
+from typing import Any
 
 from sensory_atlas.schema import SensoryObject
 
@@ -66,6 +70,64 @@ MINERAL_SPECIFIC_CUES = [
     "단단한 돌",
     "차가운 돌",
 ]
+FILM_RENDERING_CUES = [
+    "필름",
+    "오래된 영화",
+    "영화관",
+    "빛 번짐",
+    "노이즈",
+    "흐릿",
+    "감정",
+    "노스텔지어",
+    "기억처럼",
+    "장면처럼",
+]
+FOOD_CONTEXT_CUES = [
+    "버터",
+    "빵",
+    "토스트",
+    "오븐",
+    "고소한",
+    "노릇",
+    "구운",
+    "카라멜",
+    "달큰",
+    "크림",
+    "꿀",
+    "초콜릿",
+    "설탕",
+    "견과",
+    "지방감",
+]
+TEXTILE_CONTEXT_CUES = [
+    "목도리",
+    "니트",
+    "천",
+    "섬유",
+    "옷",
+    "티셔츠",
+    "커튼",
+    "덮",
+    "체온",
+    "보송",
+]
+FOOD_OBJECT_IDS = {
+    "butter_toast",
+    "vanilla_cream",
+    "roasted_almond",
+    "burnt_sugar",
+    "honeycomb",
+    "dark_chocolate",
+}
+TEXTILE_OBJECT_IDS = {
+    "cashmere",
+    "warm_cotton",
+    "wool_blanket",
+    "fresh_linen",
+    "organza",
+    "silk",
+    "velvet",
+}
 
 
 @dataclass(frozen=True)
@@ -90,8 +152,26 @@ def _candidate_terms(obj: SensoryObject) -> list[str]:
     return [term for term in terms if term]
 
 
+@lru_cache(maxsize=1)
+def load_phrase_cues() -> dict[str, dict[str, Any]]:
+    path = Path(__file__).resolve().parents[2] / "data" / "phrase_cues.json"
+    if not path.exists():
+        return {}
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
 def has_rendering_cue(normalized_text: str) -> bool:
     return any(cue.casefold() in normalized_text for cue in FOUR_K_CLARITY_CUES)
+
+
+def has_film_rendering_cue(normalized_text: str) -> bool:
+    return any(cue.casefold() in normalized_text for cue in FILM_RENDERING_CUES)
+
+
+def has_four_k_rendering_cue(normalized_text: str) -> bool:
+    if has_film_rendering_cue(normalized_text) and "4k" not in normalized_text:
+        return False
+    return has_rendering_cue(normalized_text)
 
 
 def has_visual_particle_context(normalized_text: str) -> bool:
@@ -104,17 +184,42 @@ def has_mineral_specific_cue(normalized_text: str) -> bool:
     return any(cue.casefold() in normalized_text for cue in MINERAL_SPECIFIC_CUES)
 
 
+def has_food_context(normalized_text: str) -> bool:
+    return any(cue.casefold() in normalized_text for cue in FOOD_CONTEXT_CUES)
+
+
+def has_textile_context(normalized_text: str) -> bool:
+    return any(cue.casefold() in normalized_text for cue in TEXTILE_CONTEXT_CUES)
+
+
+def phrase_cue_score(normalized_text: str, obj: SensoryObject) -> float:
+    cue_config = load_phrase_cues().get(obj.object_id, {})
+    cues = cue_config.get("positive_cues", [])
+    base_boost = float(cue_config.get("boost", 0.0))
+    score = 0.0
+    for cue in cues:
+        normalized_cue = str(cue).casefold()
+        if normalized_cue and normalized_cue in normalized_text:
+            score += base_boost + min(len(normalized_cue) / 30, 0.15)
+    return score
+
+
 def score_object(text: str, obj: SensoryObject) -> float:
     normalized = normalize(text)
     text_tokens = tokenize(text)
-    rendering_cue = has_rendering_cue(normalized)
+    four_k_rendering_cue = has_four_k_rendering_cue(normalized)
+    film_rendering_cue = has_film_rendering_cue(normalized)
     visual_particle_context = has_visual_particle_context(normalized)
+    food_context = has_food_context(normalized)
+    textile_context = has_textile_context(normalized)
     score = 0.0
 
     for strong_term in (obj.korean_label, obj.label, obj.object_id.replace("_", " ")):
         term = normalize(strong_term)
         if term and term in normalized:
             score += 0.55
+
+    score += phrase_cue_score(normalized, obj)
 
     for expression in obj.example_expressions:
         expression_norm = normalize(expression)
@@ -136,17 +241,32 @@ def score_object(text: str, obj: SensoryObject) -> float:
     if object_tokens:
         score += min((len(text_tokens & object_tokens) / len(object_tokens)) * 0.25, 0.25)
 
-    if rendering_cue and obj.object_type == "visual_rendering_object":
+    if (four_k_rendering_cue or film_rendering_cue) and obj.object_type == "visual_rendering_object":
         score += 0.25
+
+    if film_rendering_cue and obj.object_id == "film_grain":
+        score += 0.45
+    if film_rendering_cue and obj.object_id == "four_k_clarity" and "4k" not in normalized:
+        score *= 0.45
 
     if obj.object_id == "four_k_clarity":
         if "4k" in normalized:
             score += 0.60
-        if visual_particle_context:
+        if visual_particle_context and four_k_rendering_cue:
             score += 0.25
-        for cue in FOUR_K_CLARITY_CUES:
-            if cue.casefold() in normalized:
-                score += 0.08
+        if four_k_rendering_cue:
+            for cue in FOUR_K_CLARITY_CUES:
+                if cue.casefold() in normalized:
+                    score += 0.08
+
+    if food_context:
+        if obj.object_id in FOOD_OBJECT_IDS:
+            score += 0.22
+        elif obj.object_id in TEXTILE_OBJECT_IDS and not textile_context:
+            score *= 0.65
+
+    if textile_context and not food_context and obj.object_id in TEXTILE_OBJECT_IDS:
+        score += 0.18
 
     if obj.object_id == "granite":
         if visual_particle_context:
