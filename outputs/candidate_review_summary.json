@@ -1,12 +1,13 @@
 {
   "total_candidates": 47,
   "recommended_actions": {
+    "defer_to_future_batch": 4,
     "do_not_merge_yet": 0,
     "keep_as_axis_descriptor": 0,
     "keep_as_candidate": 18,
     "needs_distinction_review": 12,
     "needs_more_examples": 0,
-    "ready_for_curated_merge": 17
+    "ready_for_curated_merge": 13
   },
   "rows": [
     {
@@ -336,12 +337,12 @@
         "cross_domain"
       ],
       "family": "Amber / Resin / Golden",
-      "review_status": "unreviewed",
+      "review_status": "merged",
       "recommended_action": "ready_for_curated_merge",
-      "priority": "medium",
-      "reviewer_notes": "",
-      "promoted_to_object_id": null,
-      "reviewed_at": null,
+      "priority": "high",
+      "reviewer_notes": "Promoted in v1.5 curated ontology expansion batch.",
+      "promoted_to_object_id": "amber_glow",
+      "reviewed_at": "2026-07-01",
       "sensory_archetype_score": 0.93,
       "cross_domain_reuse_score": 0.65,
       "distinctiveness_score": 0.6,
@@ -369,24 +370,27 @@
           "overlap_score": 0.38
         },
         {
+          "existing_object_id": "amber_glow",
+          "similarity_reason": [
+            "family_overlap",
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.16
+        },
+        {
+          "existing_object_id": "dark_resin",
+          "similarity_reason": [
+            "family_overlap",
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.14
+        },
+        {
           "existing_object_id": "cashmere",
           "similarity_reason": [
             "axis_overlap"
-          ],
-          "overlap_score": 0.08
-        },
-        {
-          "existing_object_id": "wool_blanket",
-          "similarity_reason": [
-            "axis_overlap"
-          ],
-          "overlap_score": 0.08
-        },
-        {
-          "existing_object_id": "film_grain",
-          "similarity_reason": [
-            "axis_overlap",
-            "keyword_overlap"
           ],
           "overlap_score": 0.08
         }
@@ -668,12 +672,12 @@
         "cross_domain"
       ],
       "family": "Milky / Creamy / Soft",
-      "review_status": "unreviewed",
+      "review_status": "merged",
       "recommended_action": "ready_for_curated_merge",
-      "priority": "medium",
-      "reviewer_notes": "",
-      "promoted_to_object_id": null,
-      "reviewed_at": null,
+      "priority": "high",
+      "reviewer_notes": "Promoted in v1.5 curated ontology expansion batch.",
+      "promoted_to_object_id": "lactonic_milk_softness",
+      "reviewed_at": "2026-07-01",
       "sensory_archetype_score": 0.93,
       "cross_domain_reuse_score": 1.0,
       "distinctiveness_score": 0.59,
@@ -702,6 +706,15 @@
           "overlap_score": 0.41
         },
         {
+          "existing_object_id": "lactonic_milk_softness",
+          "similarity_reason": [
+            "family_overlap",
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.15
+        },
+        {
           "existing_object_id": "cashmere",
           "similarity_reason": [
             "axis_overlap"
@@ -712,14 +725,6 @@
           "existing_object_id": "wool_blanket",
           "similarity_reason": [
             "axis_overlap"
-          ],
-          "overlap_score": 0.08
-        },
-        {
-          "existing_object_id": "film_grain",
-          "similarity_reason": [
-            "axis_overlap",
-            "keyword_overlap"
           ],
           "overlap_score": 0.08
         }
@@ -735,12 +740,12 @@
         "whisky"
       ],
       "family": "Green / Milky / Fruit",
-      "review_status": "unreviewed",
-      "recommended_action": "ready_for_curated_merge",
+      "review_status": "needs_distinction_review",
+      "recommended_action": "defer_to_future_batch",
       "priority": "medium",
-      "reviewer_notes": "",
+      "reviewer_notes": "Deferred from v1.5 batch because it is promising but still partly note-like and needs clearer distinction from green_stem and honeycomb.",
       "promoted_to_object_id": null,
-      "reviewed_at": null,
+      "reviewed_at": "2026-07-01",
       "sensory_archetype_score": 0.93,
       "cross_domain_reuse_score": 1.0,
       "distinctiveness_score": 0.62,
@@ -783,11 +788,12 @@
           "overlap_score": 0.06
         },
         {
-          "existing_object_id": "cashmere",
+          "existing_object_id": "amber_glow",
           "similarity_reason": [
-            "axis_overlap"
+            "axis_overlap",
+            "keyword_overlap"
           ],
-          "overlap_score": 0.05
+          "overlap_score": 0.06
         }
       ]
     },
@@ -834,22 +840,24 @@
           "overlap_score": 0.38
         },
         {
-          "existing_object_id": "dark_chocolate",
+          "existing_object_id": "dark_resin",
           "similarity_reason": [
-            "axis_overlap"
-          ],
-          "overlap_score": 0.08
-        },
-        {
-          "existing_object_id": "tobacco_leaf",
-          "similarity_reason": [
+            "family_overlap",
             "axis_overlap",
             "keyword_overlap"
           ],
-          "overlap_score": 0.08
+          "overlap_score": 0.14
         },
         {
-          "existing_object_id": "charred_oak",
+          "existing_object_id": "amber_glow",
+          "similarity_reason": [
+            "family_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.12
+        },
+        {
+          "existing_object_id": "dark_chocolate",
           "similarity_reason": [
             "axis_overlap"
           ],
@@ -933,12 +941,12 @@
         "cross_domain"
       ],
       "family": "Coastal / Medicinal / Salty",
-      "review_status": "unreviewed",
-      "recommended_action": "ready_for_curated_merge",
+      "review_status": "needs_distinction_review",
+      "recommended_action": "defer_to_future_batch",
       "priority": "medium",
-      "reviewer_notes": "",
+      "reviewer_notes": "Deferred from v1.5 batch because it needs more cross-domain examples beyond coastal/medicinal language.",
       "promoted_to_object_id": null,
-      "reviewed_at": null,
+      "reviewed_at": "2026-07-01",
       "sensory_archetype_score": 0.93,
       "cross_domain_reuse_score": 0.65,
       "distinctiveness_score": 0.62,
@@ -1459,12 +1467,12 @@
         "coffee"
       ],
       "family": "Fruit / Golden / Soft",
-      "review_status": "unreviewed",
-      "recommended_action": "ready_for_curated_merge",
+      "review_status": "needs_distinction_review",
+      "recommended_action": "defer_to_future_batch",
       "priority": "medium",
-      "reviewer_notes": "",
+      "reviewer_notes": "Deferred from v1.5 batch because it may read as a fruit note family rather than a reusable sensory archetype.",
       "promoted_to_object_id": null,
-      "reviewed_at": null,
+      "reviewed_at": "2026-07-01",
       "sensory_archetype_score": 0.93,
       "cross_domain_reuse_score": 0.65,
       "distinctiveness_score": 0.6,
@@ -1507,11 +1515,12 @@
           "overlap_score": 0.06
         },
         {
-          "existing_object_id": "cashmere",
+          "existing_object_id": "amber_glow",
           "similarity_reason": [
-            "axis_overlap"
+            "axis_overlap",
+            "keyword_overlap"
           ],
-          "overlap_score": 0.05
+          "overlap_score": 0.06
         }
       ]
     },
@@ -1949,11 +1958,12 @@
           "overlap_score": 0.06
         },
         {
-          "existing_object_id": "cashmere",
+          "existing_object_id": "amber_glow",
           "similarity_reason": [
-            "axis_overlap"
+            "axis_overlap",
+            "keyword_overlap"
           ],
-          "overlap_score": 0.05
+          "overlap_score": 0.06
         }
       ]
     },
@@ -1967,12 +1977,12 @@
         "cross_domain"
       ],
       "family": "Tea / Clarity / Dry",
-      "review_status": "unreviewed",
+      "review_status": "merged",
       "recommended_action": "ready_for_curated_merge",
-      "priority": "medium",
-      "reviewer_notes": "",
-      "promoted_to_object_id": null,
-      "reviewed_at": null,
+      "priority": "high",
+      "reviewer_notes": "Promoted in v1.5 curated ontology expansion batch.",
+      "promoted_to_object_id": "tea_like_clarity",
+      "reviewed_at": "2026-07-01",
       "sensory_archetype_score": 0.93,
       "cross_domain_reuse_score": 1.0,
       "distinctiveness_score": 0.59,
@@ -1999,6 +2009,14 @@
           "overlap_score": 0.38
         },
         {
+          "existing_object_id": "tea_like_clarity",
+          "similarity_reason": [
+            "family_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.12
+        },
+        {
           "existing_object_id": "cashmere",
           "similarity_reason": [
             "axis_overlap"
@@ -2007,14 +2025,6 @@
         },
         {
           "existing_object_id": "wool_blanket",
-          "similarity_reason": [
-            "axis_overlap",
-            "keyword_overlap"
-          ],
-          "overlap_score": 0.08
-        },
-        {
-          "existing_object_id": "film_grain",
           "similarity_reason": [
             "axis_overlap",
             "keyword_overlap"
@@ -2033,12 +2043,12 @@
         "cross_domain"
       ],
       "family": "Body / Syrup / Thick",
-      "review_status": "unreviewed",
-      "recommended_action": "ready_for_curated_merge",
+      "review_status": "needs_distinction_review",
+      "recommended_action": "defer_to_future_batch",
       "priority": "medium",
-      "reviewer_notes": "",
+      "reviewer_notes": "Deferred from v1.5 batch because it may be closer to a density/texture descriptor than a standalone sensory object.",
       "promoted_to_object_id": null,
-      "reviewed_at": null,
+      "reviewed_at": "2026-07-01",
       "sensory_archetype_score": 0.93,
       "cross_domain_reuse_score": 1.0,
       "distinctiveness_score": 0.62,
@@ -2166,12 +2176,12 @@
         "cross_domain"
       ],
       "family": "Astringent / Dry / Grip",
-      "review_status": "unreviewed",
+      "review_status": "merged",
       "recommended_action": "ready_for_curated_merge",
-      "priority": "medium",
-      "reviewer_notes": "",
-      "promoted_to_object_id": null,
-      "reviewed_at": null,
+      "priority": "high",
+      "reviewer_notes": "Promoted in v1.5 curated ontology expansion batch.",
+      "promoted_to_object_id": "astringent_dryness",
+      "reviewed_at": "2026-07-01",
       "sensory_archetype_score": 0.73,
       "cross_domain_reuse_score": 1.0,
       "distinctiveness_score": 0.59,
@@ -2305,12 +2315,12 @@
         "cross_domain"
       ],
       "family": "Earth / Rain / Moist",
-      "review_status": "unreviewed",
+      "review_status": "merged",
       "recommended_action": "ready_for_curated_merge",
-      "priority": "medium",
-      "reviewer_notes": "",
-      "promoted_to_object_id": null,
-      "reviewed_at": null,
+      "priority": "high",
+      "reviewer_notes": "Promoted in v1.5 curated ontology expansion batch.",
+      "promoted_to_object_id": "wet_soil",
+      "reviewed_at": "2026-07-01",
       "sensory_archetype_score": 0.73,
       "cross_domain_reuse_score": 1.0,
       "distinctiveness_score": 0.61,
@@ -2664,24 +2674,27 @@
           "overlap_score": 0.38
         },
         {
+          "existing_object_id": "amber_glow",
+          "similarity_reason": [
+            "family_overlap",
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.15
+        },
+        {
+          "existing_object_id": "dark_resin",
+          "similarity_reason": [
+            "family_overlap",
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.15
+        },
+        {
           "existing_object_id": "cashmere",
           "similarity_reason": [
             "axis_overlap"
-          ],
-          "overlap_score": 0.08
-        },
-        {
-          "existing_object_id": "wool_blanket",
-          "similarity_reason": [
-            "axis_overlap"
-          ],
-          "overlap_score": 0.08
-        },
-        {
-          "existing_object_id": "film_grain",
-          "similarity_reason": [
-            "axis_overlap",
-            "keyword_overlap"
           ],
           "overlap_score": 0.08
         }
@@ -2698,12 +2711,12 @@
         "cross_domain"
       ],
       "family": "Golden / Sweet / Dense",
-      "review_status": "unreviewed",
+      "review_status": "merged",
       "recommended_action": "ready_for_curated_merge",
-      "priority": "medium",
-      "reviewer_notes": "",
-      "promoted_to_object_id": null,
-      "reviewed_at": null,
+      "priority": "high",
+      "reviewer_notes": "Promoted in v1.5 curated ontology expansion batch.",
+      "promoted_to_object_id": "golden_density",
+      "reviewed_at": "2026-07-01",
       "sensory_archetype_score": 0.93,
       "cross_domain_reuse_score": 1.0,
       "distinctiveness_score": 0.6,
@@ -2764,12 +2777,12 @@
         "cross_domain"
       ],
       "family": "Dark / Resin / Earth",
-      "review_status": "unreviewed",
+      "review_status": "merged",
       "recommended_action": "ready_for_curated_merge",
-      "priority": "medium",
-      "reviewer_notes": "",
-      "promoted_to_object_id": null,
-      "reviewed_at": null,
+      "priority": "high",
+      "reviewer_notes": "Promoted in v1.5 curated ontology expansion batch.",
+      "promoted_to_object_id": "dark_resin",
+      "reviewed_at": "2026-07-01",
       "sensory_archetype_score": 0.93,
       "cross_domain_reuse_score": 0.65,
       "distinctiveness_score": 0.59,
@@ -2805,18 +2818,22 @@
           "overlap_score": 0.36
         },
         {
-          "existing_object_id": "cashmere",
+          "existing_object_id": "dark_resin",
           "similarity_reason": [
-            "axis_overlap"
+            "family_overlap",
+            "axis_overlap",
+            "keyword_overlap"
           ],
-          "overlap_score": 0.08
+          "overlap_score": 0.15
         },
         {
-          "existing_object_id": "wool_blanket",
+          "existing_object_id": "amber_glow",
           "similarity_reason": [
-            "axis_overlap"
+            "family_overlap",
+            "axis_overlap",
+            "keyword_overlap"
           ],
-          "overlap_score": 0.08
+          "overlap_score": 0.14
         }
       ]
     },
@@ -3030,12 +3047,12 @@
         "cross_domain"
       ],
       "family": "Green / Leaf / Crisp",
-      "review_status": "unreviewed",
+      "review_status": "merged",
       "recommended_action": "ready_for_curated_merge",
-      "priority": "medium",
-      "reviewer_notes": "",
-      "promoted_to_object_id": null,
-      "reviewed_at": null,
+      "priority": "high",
+      "reviewer_notes": "Promoted in v1.5 curated ontology expansion batch.",
+      "promoted_to_object_id": "green_leaf_crush",
+      "reviewed_at": "2026-07-01",
       "sensory_archetype_score": 0.73,
       "cross_domain_reuse_score": 1.0,
       "distinctiveness_score": 0.62,

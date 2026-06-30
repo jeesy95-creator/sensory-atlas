@@ -1,0 +1,43 @@
+{
+  "version": "v1.5",
+  "promoted_count": 8,
+  "promoted_object_ids": [
+    "green_leaf_crush",
+    "wet_soil",
+    "astringent_dryness",
+    "amber_glow",
+    "dark_resin",
+    "lactonic_milk_softness",
+    "tea_like_clarity",
+    "golden_density"
+  ],
+  "deferred_candidate_ids": [
+    "fig_leaf_green",
+    "stone_fruit_glow",
+    "iodine_coast",
+    "syrupy_body"
+  ],
+  "previous_object_count": 50,
+  "new_object_count": 58,
+  "regression_case_count": 32,
+  "phrase_cue_positive_count": 80,
+  "phrase_cue_negative_count": 40,
+  "evaluation": {
+    "default": {
+      "top1": 1.0,
+      "top3": 1.0,
+      "low_confidence": 0
+    },
+    "blind": {
+      "top1": 1.0,
+      "top3": 1.0,
+      "low_confidence": 0
+    },
+    "holdout": {
+      "top1": 0.78,
+      "top3": 0.88,
+      "low_confidence": 5
+    }
+  },
+  "notes": "Curated ontology expansion. Holdout unchanged. Parser scoring unchanged."
+}

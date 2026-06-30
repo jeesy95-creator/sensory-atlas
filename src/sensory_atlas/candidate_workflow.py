@@ -28,6 +28,7 @@ RECOMMENDED_ACTIONS = {
     "keep_as_candidate",
     "keep_as_axis_descriptor",
     "do_not_merge_yet",
+    "defer_to_future_batch",
 }
 NOTE_LIKE_TERMS = {
     "bergamot",
@@ -333,8 +334,10 @@ def build_candidate_review_rows(
         readiness = compute_candidate_readiness(candidate, existing_objects)
         status = dict(review_status.get(str(candidate["candidate_object_id"]), {}))
         status.setdefault("recommended_action", readiness["recommended_action"])
+        status_action = status["recommended_action"]
         row = candidate_to_review_row(candidate, status)
         row.update(readiness)
+        row["recommended_action"] = status_action
         rows.append(row)
     return rows
 

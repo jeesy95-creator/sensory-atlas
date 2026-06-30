@@ -2,18 +2,26 @@
 
 ## Summary
 - Total candidates: 47
+- defer_to_future_batch: 4
 - do_not_merge_yet: 0
 - keep_as_axis_descriptor: 0
 - keep_as_candidate: 18
 - needs_distinction_review: 12
 - needs_more_examples: 0
-- ready_for_curated_merge: 17
+- ready_for_curated_merge: 13
 
 ## High-Priority Candidates
 
 | candidate_object_id | korean_label | source_domains | recommended_action | readiness_score | note_dictionary_risk |
 | --- | --- | --- | --- | --- | --- |
-| - | - | - | - | - | - |
+| amber_glow | 앰버의 따뜻한 금빛 잔향 | fragrance, cross_domain | ready_for_curated_merge | 0.72 | 0.13 |
+| lactonic_milk_softness | 우유처럼 하얗고 둥근 부드러움 | fragrance, coffee, cross_domain | ready_for_curated_merge | 0.80 | 0.00 |
+| tea_like_clarity | 차처럼 맑고 건조한 투명감 | coffee, fragrance, cross_domain | ready_for_curated_merge | 0.80 | 0.00 |
+| astringent_dryness | 혀를 조이는 수렴성 드라이함 | coffee, wine, cross_domain | ready_for_curated_merge | 0.74 | 0.15 |
+| wet_soil | 비 맞은 흙의 낮고 축축한 냄새 | fragrance, wine, coffee, cross_domain | ready_for_curated_merge | 0.75 | 0.15 |
+| golden_density | 금빛으로 두껍게 남는 달콤한 밀도 | fragrance, whisky, coffee, cross_domain | ready_for_curated_merge | 0.81 | 0.00 |
+| dark_resin | 어둡고 낮게 깔리는 수지감 | fragrance, cross_domain | ready_for_curated_merge | 0.74 | 0.00 |
+| green_leaf_crush | 잎을 으깼을 때 나는 아삭한 초록감 | fragrance, wine, coffee, cross_domain | ready_for_curated_merge | 0.75 | 0.15 |
 
 ## Ready for Curated Merge
 
@@ -24,7 +32,7 @@
 - suggested phrase cues: 앰버, 앰버 따뜻한 금빛 잔향, 앰버 같은 느낌
 - negative cues: 과도한 단맛, 무관한 금속성, 탁한 잔향
 - related existing objects: honeycomb, vanilla_cream
-- similar existing objects: [{"existing_object_id": "vanilla_cream", "similarity_reason": ["related_existing_object", "axis_overlap", "keyword_overlap"], "overlap_score": 0.4}, {"existing_object_id": "honeycomb", "similarity_reason": ["related_existing_object", "keyword_overlap"], "overlap_score": 0.38}, {"existing_object_id": "cashmere", "similarity_reason": ["axis_overlap"], "overlap_score": 0.08}, {"existing_object_id": "wool_blanket", "similarity_reason": ["axis_overlap"], "overlap_score": 0.08}, {"existing_object_id": "film_grain", "similarity_reason": ["axis_overlap", "keyword_overlap"], "overlap_score": 0.08}]
+- similar existing objects: [{"existing_object_id": "vanilla_cream", "similarity_reason": ["related_existing_object", "axis_overlap", "keyword_overlap"], "overlap_score": 0.4}, {"existing_object_id": "honeycomb", "similarity_reason": ["related_existing_object", "keyword_overlap"], "overlap_score": 0.38}, {"existing_object_id": "amber_glow", "similarity_reason": ["family_overlap", "axis_overlap", "keyword_overlap"], "overlap_score": 0.16}, {"existing_object_id": "dark_resin", "similarity_reason": ["family_overlap", "axis_overlap", "keyword_overlap"], "overlap_score": 0.14}, {"existing_object_id": "cashmere", "similarity_reason": ["axis_overlap"], "overlap_score": 0.08}]
 
 ```json
 {
@@ -120,7 +128,7 @@
 - suggested phrase cues: 우유처럼 하얗고 둥근 부드러움, 우유처럼 하얗고 둥근 부드러움, 우유처럼 하얗고 둥근 부드러움 같은 느낌
 - negative cues: 과도한 단맛, 무관한 금속성, 탁한 잔향
 - related existing objects: vanilla_cream, warm_cotton
-- similar existing objects: [{"existing_object_id": "warm_cotton", "similarity_reason": ["related_existing_object", "axis_overlap", "keyword_overlap"], "overlap_score": 0.41}, {"existing_object_id": "vanilla_cream", "similarity_reason": ["related_existing_object", "axis_overlap", "keyword_overlap"], "overlap_score": 0.41}, {"existing_object_id": "cashmere", "similarity_reason": ["axis_overlap"], "overlap_score": 0.08}, {"existing_object_id": "wool_blanket", "similarity_reason": ["axis_overlap"], "overlap_score": 0.08}, {"existing_object_id": "film_grain", "similarity_reason": ["axis_overlap", "keyword_overlap"], "overlap_score": 0.08}]
+- similar existing objects: [{"existing_object_id": "warm_cotton", "similarity_reason": ["related_existing_object", "axis_overlap", "keyword_overlap"], "overlap_score": 0.41}, {"existing_object_id": "vanilla_cream", "similarity_reason": ["related_existing_object", "axis_overlap", "keyword_overlap"], "overlap_score": 0.41}, {"existing_object_id": "lactonic_milk_softness", "similarity_reason": ["family_overlap", "axis_overlap", "keyword_overlap"], "overlap_score": 0.15}, {"existing_object_id": "cashmere", "similarity_reason": ["axis_overlap"], "overlap_score": 0.08}, {"existing_object_id": "wool_blanket", "similarity_reason": ["axis_overlap"], "overlap_score": 0.08}]
 
 ```json
 {
@@ -151,102 +159,6 @@
   "related_objects": [
     "vanilla_cream",
     "warm_cotton"
-  ],
-  "opposite_objects": [],
-  "associated_products": [],
-  "evidence_refs": [
-    "candidate_v1.1"
-  ],
-  "status": "draft_from_candidate"
-}
-```
-
-### fig_leaf_green / 무화과 잎의 초록 밀키함
-- definition: A warm green fig impression between leaf, sap, and milky fruit skin.
-- core axes: `{"temperature": "Warm", "texture": ["Juicy", "Soft"], "light": ["Bright"], "atmosphere": ["Fresh"]}`
-- example expressions: 무화과 잎처럼 감각의 윤곽이 분명하게 떠오르는 향, 단순한 노트보다 무화과 잎의 초록 밀키함에 가까운 느낌, 입안과 공기 중에 무화과 잎의 분위기가 천천히 남는다
-- suggested phrase cues: 무화과 잎, 무화과 잎 초록 밀키함, 무화과 잎 같은 느낌
-- negative cues: 과도한 단맛, 무관한 금속성, 탁한 잔향
-- related existing objects: green_stem, honeycomb
-- similar existing objects: [{"existing_object_id": "honeycomb", "similarity_reason": ["related_existing_object", "keyword_overlap"], "overlap_score": 0.38}, {"existing_object_id": "green_stem", "similarity_reason": ["related_existing_object", "keyword_overlap"], "overlap_score": 0.35}, {"existing_object_id": "warm_cotton", "similarity_reason": ["axis_overlap", "keyword_overlap"], "overlap_score": 0.06}, {"existing_object_id": "film_grain", "similarity_reason": ["axis_overlap", "keyword_overlap"], "overlap_score": 0.06}, {"existing_object_id": "cashmere", "similarity_reason": ["axis_overlap"], "overlap_score": 0.05}]
-
-```json
-{
-  "object_id": "fig_leaf_green",
-  "label": "Fig Leaf Green",
-  "korean_label": "무화과 잎의 초록 밀키함",
-  "object_type": "sensory_object_draft",
-  "family": "Green / Milky / Fruit",
-  "definition": "A warm green fig impression between leaf, sap, and milky fruit skin.",
-  "core_axes": {
-    "temperature": "Warm",
-    "texture": [
-      "Juicy",
-      "Soft"
-    ],
-    "light": [
-      "Bright"
-    ],
-    "atmosphere": [
-      "Fresh"
-    ]
-  },
-  "example_expressions": [
-    "무화과 잎처럼 감각의 윤곽이 분명하게 떠오르는 향",
-    "단순한 노트보다 무화과 잎의 초록 밀키함에 가까운 느낌",
-    "입안과 공기 중에 무화과 잎의 분위기가 천천히 남는다"
-  ],
-  "related_objects": [
-    "green_stem",
-    "honeycomb"
-  ],
-  "opposite_objects": [],
-  "associated_products": [],
-  "evidence_refs": [
-    "candidate_v1.1"
-  ],
-  "status": "draft_from_candidate"
-}
-```
-
-### iodine_coast / 아이오딘과 해안 공기의 차가운 짠맛
-- definition: A cool coastal medicinal edge with salt, iodine, and pale metallic air.
-- core axes: `{"temperature": "Warm", "texture": ["Soft", "Dry"], "light": ["Diffuse"], "atmosphere": ["Muted"]}`
-- example expressions: 아이오딘과 해안 공기처럼 감각의 윤곽이 분명하게 떠오르는 향, 단순한 노트보다 아이오딘과 해안 공기의 차가운 짠맛에 가까운 느낌, 입안과 공기 중에 아이오딘과 해안 공기의 분위기가 천천히 남는다
-- suggested phrase cues: 아이오딘과 해안 공기, 아이오딘과 해안 공기 차가운 짠맛, 아이오딘과 해안 공기 같은 느낌
-- negative cues: 과도한 단맛, 무관한 금속성, 탁한 잔향
-- related existing objects: sea_breeze, silver_spoon
-- similar existing objects: [{"existing_object_id": "sea_breeze", "similarity_reason": ["related_existing_object"], "overlap_score": 0.38}, {"existing_object_id": "silver_spoon", "similarity_reason": ["related_existing_object", "keyword_overlap"], "overlap_score": 0.36}, {"existing_object_id": "cashmere", "similarity_reason": ["axis_overlap"], "overlap_score": 0.08}, {"existing_object_id": "wool_blanket", "similarity_reason": ["axis_overlap", "keyword_overlap"], "overlap_score": 0.08}, {"existing_object_id": "film_grain", "similarity_reason": ["axis_overlap", "keyword_overlap"], "overlap_score": 0.08}]
-
-```json
-{
-  "object_id": "iodine_coast",
-  "label": "Iodine Coast",
-  "korean_label": "아이오딘과 해안 공기의 차가운 짠맛",
-  "object_type": "sensory_object_draft",
-  "family": "Coastal / Medicinal / Salty",
-  "definition": "A cool coastal medicinal edge with salt, iodine, and pale metallic air.",
-  "core_axes": {
-    "temperature": "Warm",
-    "texture": [
-      "Soft",
-      "Dry"
-    ],
-    "light": [
-      "Diffuse"
-    ],
-    "atmosphere": [
-      "Muted"
-    ]
-  },
-  "example_expressions": [
-    "아이오딘과 해안 공기처럼 감각의 윤곽이 분명하게 떠오르는 향",
-    "단순한 노트보다 아이오딘과 해안 공기의 차가운 짠맛에 가까운 느낌",
-    "입안과 공기 중에 아이오딘과 해안 공기의 분위기가 천천히 남는다"
-  ],
-  "related_objects": [
-    "sea_breeze",
-    "silver_spoon"
   ],
   "opposite_objects": [],
   "associated_products": [],
@@ -402,54 +314,6 @@
 }
 ```
 
-### stone_fruit_glow / 복숭아와 살구 같은 금빛 과실감
-- definition: A soft golden fruit glow between peach skin, apricot, and warm light.
-- core axes: `{"temperature": "Warm", "texture": ["Juicy", "Soft"], "light": ["Bright"], "atmosphere": ["Fresh"]}`
-- example expressions: 복숭아와 살구 같은 금빛 과실감처럼 감각의 윤곽이 분명하게 떠오르는 향, 단순한 노트보다 복숭아와 살구 같은 금빛 과실감에 가까운 느낌, 입안과 공기 중에 복숭아와 살구 같은 금빛 과실감의 분위기가 천천히 남는다
-- suggested phrase cues: 복숭아와 살구 같은 금빛 과실감, 복숭아와 살구 같은 금빛 과실감, 복숭아와 살구 같은 금빛 과실감 같은 느낌
-- negative cues: 과도한 단맛, 무관한 금속성, 탁한 잔향
-- related existing objects: honeycomb, vanilla_cream
-- similar existing objects: [{"existing_object_id": "vanilla_cream", "similarity_reason": ["related_existing_object", "axis_overlap"], "overlap_score": 0.4}, {"existing_object_id": "honeycomb", "similarity_reason": ["related_existing_object", "keyword_overlap"], "overlap_score": 0.38}, {"existing_object_id": "warm_cotton", "similarity_reason": ["axis_overlap", "keyword_overlap"], "overlap_score": 0.06}, {"existing_object_id": "film_grain", "similarity_reason": ["axis_overlap", "keyword_overlap"], "overlap_score": 0.06}, {"existing_object_id": "cashmere", "similarity_reason": ["axis_overlap"], "overlap_score": 0.05}]
-
-```json
-{
-  "object_id": "stone_fruit_glow",
-  "label": "Stone Fruit Glow",
-  "korean_label": "복숭아와 살구 같은 금빛 과실감",
-  "object_type": "sensory_object_draft",
-  "family": "Fruit / Golden / Soft",
-  "definition": "A soft golden fruit glow between peach skin, apricot, and warm light.",
-  "core_axes": {
-    "temperature": "Warm",
-    "texture": [
-      "Juicy",
-      "Soft"
-    ],
-    "light": [
-      "Bright"
-    ],
-    "atmosphere": [
-      "Fresh"
-    ]
-  },
-  "example_expressions": [
-    "복숭아와 살구 같은 금빛 과실감처럼 감각의 윤곽이 분명하게 떠오르는 향",
-    "단순한 노트보다 복숭아와 살구 같은 금빛 과실감에 가까운 느낌",
-    "입안과 공기 중에 복숭아와 살구 같은 금빛 과실감의 분위기가 천천히 남는다"
-  ],
-  "related_objects": [
-    "honeycomb",
-    "vanilla_cream"
-  ],
-  "opposite_objects": [],
-  "associated_products": [],
-  "evidence_refs": [
-    "candidate_v1.1"
-  ],
-  "status": "draft_from_candidate"
-}
-```
-
 ### tea_like_clarity / 차처럼 맑고 건조한 투명감
 - definition: A tea-like clear dryness with gentle bitterness and clean edges.
 - core axes: `{"temperature": "Warm", "texture": ["Soft", "Dry"], "light": ["Diffuse"], "atmosphere": ["Muted"]}`
@@ -457,7 +321,7 @@
 - suggested phrase cues: 차처럼 맑고 건조한 투명감, 차처럼 맑고 건조한 투명감, 차처럼 맑고 건조한 투명감 같은 느낌
 - negative cues: 과도한 단맛, 무관한 금속성, 탁한 잔향
 - related existing objects: black_tea, dry_herb
-- similar existing objects: [{"existing_object_id": "black_tea", "similarity_reason": ["related_existing_object", "axis_overlap", "keyword_overlap"], "overlap_score": 0.41}, {"existing_object_id": "dry_herb", "similarity_reason": ["related_existing_object"], "overlap_score": 0.38}, {"existing_object_id": "cashmere", "similarity_reason": ["axis_overlap"], "overlap_score": 0.08}, {"existing_object_id": "wool_blanket", "similarity_reason": ["axis_overlap", "keyword_overlap"], "overlap_score": 0.08}, {"existing_object_id": "film_grain", "similarity_reason": ["axis_overlap", "keyword_overlap"], "overlap_score": 0.08}]
+- similar existing objects: [{"existing_object_id": "black_tea", "similarity_reason": ["related_existing_object", "axis_overlap", "keyword_overlap"], "overlap_score": 0.41}, {"existing_object_id": "dry_herb", "similarity_reason": ["related_existing_object"], "overlap_score": 0.38}, {"existing_object_id": "tea_like_clarity", "similarity_reason": ["family_overlap", "keyword_overlap"], "overlap_score": 0.12}, {"existing_object_id": "cashmere", "similarity_reason": ["axis_overlap"], "overlap_score": 0.08}, {"existing_object_id": "wool_blanket", "similarity_reason": ["axis_overlap", "keyword_overlap"], "overlap_score": 0.08}]
 
 ```json
 {
@@ -488,54 +352,6 @@
   "related_objects": [
     "black_tea",
     "dry_herb"
-  ],
-  "opposite_objects": [],
-  "associated_products": [],
-  "evidence_refs": [
-    "candidate_v1.1"
-  ],
-  "status": "draft_from_candidate"
-}
-```
-
-### syrupy_body / 시럽처럼 두껍게 차오르는 바디
-- definition: A thick syrupy body that fills the mouth and lingers with weight.
-- core axes: `{"temperature": "Warm", "texture": ["Soft", "Dry"], "light": ["Diffuse"], "atmosphere": ["Muted"]}`
-- example expressions: 시럽처럼 두껍게 차오르는 바디처럼 감각의 윤곽이 분명하게 떠오르는 향, 단순한 노트보다 시럽처럼 두껍게 차오르는 바디에 가까운 느낌, 입안과 공기 중에 시럽처럼 두껍게 차오르는 바디의 분위기가 천천히 남는다
-- suggested phrase cues: 시럽처럼 두껍게 차오르는 바디, 시럽처럼 두껍게 차오르는 바디, 시럽처럼 두껍게 차오르는 바디 같은 느낌
-- negative cues: 과도한 단맛, 무관한 금속성, 탁한 잔향
-- related existing objects: honeycomb, burnt_sugar
-- similar existing objects: [{"existing_object_id": "burnt_sugar", "similarity_reason": ["related_existing_object"], "overlap_score": 0.38}, {"existing_object_id": "honeycomb", "similarity_reason": ["related_existing_object", "keyword_overlap"], "overlap_score": 0.38}, {"existing_object_id": "cashmere", "similarity_reason": ["axis_overlap"], "overlap_score": 0.08}, {"existing_object_id": "wool_blanket", "similarity_reason": ["axis_overlap", "keyword_overlap"], "overlap_score": 0.08}, {"existing_object_id": "film_grain", "similarity_reason": ["axis_overlap", "keyword_overlap"], "overlap_score": 0.08}]
-
-```json
-{
-  "object_id": "syrupy_body",
-  "label": "Syrupy Body",
-  "korean_label": "시럽처럼 두껍게 차오르는 바디",
-  "object_type": "sensory_object_draft",
-  "family": "Body / Syrup / Thick",
-  "definition": "A thick syrupy body that fills the mouth and lingers with weight.",
-  "core_axes": {
-    "temperature": "Warm",
-    "texture": [
-      "Soft",
-      "Dry"
-    ],
-    "light": [
-      "Diffuse"
-    ],
-    "atmosphere": [
-      "Muted"
-    ]
-  },
-  "example_expressions": [
-    "시럽처럼 두껍게 차오르는 바디처럼 감각의 윤곽이 분명하게 떠오르는 향",
-    "단순한 노트보다 시럽처럼 두껍게 차오르는 바디에 가까운 느낌",
-    "입안과 공기 중에 시럽처럼 두껍게 차오르는 바디의 분위기가 천천히 남는다"
-  ],
-  "related_objects": [
-    "honeycomb",
-    "burnt_sugar"
   ],
   "opposite_objects": [],
   "associated_products": [],
@@ -746,7 +562,7 @@
 - suggested phrase cues: 어둡고 낮게 깔리는 수지감, 어둡고 낮게 깔리는 수지감, 어둡고 낮게 깔리는 수지감 같은 느낌
 - negative cues: 과도한 단맛, 무관한 금속성, 탁한 잔향
 - related existing objects: tobacco_leaf, forest_floor, charred_oak
-- similar existing objects: [{"existing_object_id": "tobacco_leaf", "similarity_reason": ["related_existing_object", "axis_overlap", "keyword_overlap"], "overlap_score": 0.41}, {"existing_object_id": "charred_oak", "similarity_reason": ["related_existing_object", "axis_overlap"], "overlap_score": 0.4}, {"existing_object_id": "forest_floor", "similarity_reason": ["related_existing_object", "keyword_overlap"], "overlap_score": 0.36}, {"existing_object_id": "cashmere", "similarity_reason": ["axis_overlap"], "overlap_score": 0.08}, {"existing_object_id": "wool_blanket", "similarity_reason": ["axis_overlap"], "overlap_score": 0.08}]
+- similar existing objects: [{"existing_object_id": "tobacco_leaf", "similarity_reason": ["related_existing_object", "axis_overlap", "keyword_overlap"], "overlap_score": 0.41}, {"existing_object_id": "charred_oak", "similarity_reason": ["related_existing_object", "axis_overlap"], "overlap_score": 0.4}, {"existing_object_id": "forest_floor", "similarity_reason": ["related_existing_object", "keyword_overlap"], "overlap_score": 0.36}, {"existing_object_id": "dark_resin", "similarity_reason": ["family_overlap", "axis_overlap", "keyword_overlap"], "overlap_score": 0.15}, {"existing_object_id": "amber_glow", "similarity_reason": ["family_overlap", "axis_overlap", "keyword_overlap"], "overlap_score": 0.14}]
 
 ```json
 {
@@ -841,7 +657,7 @@
 - aldehydic_sparkle: similar=[{"existing_object_id": "clean_room", "similarity_reason": ["related_existing_object", "axis_overlap", "keyword_overlap"], "overlap_score": 0.46}, {"existing_object_id": "silver_spoon", "similarity_reason": ["related_existing_object", "axis_overlap", "keyword_overlap"], "overlap_score": 0.41}, {"existing_object_id": "fresh_linen", "similarity_reason": ["axis_overlap", "keyword_overlap"], "overlap_score": 0.11}, {"existing_object_id": "warm_cotton", "similarity_reason": ["axis_overlap", "keyword_overlap"], "overlap_score": 0.08}, {"existing_object_id": "after_rain_garden", "similarity_reason": ["axis_overlap", "keyword_overlap"], "overlap_score": 0.08}]
 - ozonic_air: similar=[{"existing_object_id": "clean_room", "similarity_reason": ["related_existing_object", "axis_overlap", "keyword_overlap"], "overlap_score": 0.46}, {"existing_object_id": "cold_fog", "similarity_reason": ["related_existing_object", "family_overlap", "keyword_overlap"], "overlap_score": 0.45}, {"existing_object_id": "fresh_linen", "similarity_reason": ["axis_overlap", "keyword_overlap"], "overlap_score": 0.11}, {"existing_object_id": "sea_breeze", "similarity_reason": ["family_overlap", "axis_overlap"], "overlap_score": 0.11}, {"existing_object_id": "mountain_stream", "similarity_reason": ["family_overlap"], "overlap_score": 0.09}]
 - aquatic_clean_water: similar=[{"existing_object_id": "sea_breeze", "similarity_reason": ["related_existing_object", "family_overlap", "axis_overlap"], "overlap_score": 0.46}, {"existing_object_id": "mountain_stream", "similarity_reason": ["related_existing_object", "family_overlap"], "overlap_score": 0.44}, {"existing_object_id": "fresh_linen", "similarity_reason": ["axis_overlap", "keyword_overlap"], "overlap_score": 0.11}, {"existing_object_id": "clean_room", "similarity_reason": ["axis_overlap", "keyword_overlap"], "overlap_score": 0.11}, {"existing_object_id": "cold_fog", "similarity_reason": ["family_overlap", "keyword_overlap"], "overlap_score": 0.1}]
-- incense_smoke: similar=[{"existing_object_id": "fireplace_ash", "similarity_reason": ["related_existing_object", "family_overlap", "axis_overlap", "keyword_overlap"], "overlap_score": 0.47}, {"existing_object_id": "old_library", "similarity_reason": ["related_existing_object", "keyword_overlap"], "overlap_score": 0.38}, {"existing_object_id": "dark_chocolate", "similarity_reason": ["axis_overlap"], "overlap_score": 0.08}, {"existing_object_id": "tobacco_leaf", "similarity_reason": ["axis_overlap", "keyword_overlap"], "overlap_score": 0.08}, {"existing_object_id": "charred_oak", "similarity_reason": ["axis_overlap"], "overlap_score": 0.08}]
+- incense_smoke: similar=[{"existing_object_id": "fireplace_ash", "similarity_reason": ["related_existing_object", "family_overlap", "axis_overlap", "keyword_overlap"], "overlap_score": 0.47}, {"existing_object_id": "old_library", "similarity_reason": ["related_existing_object", "keyword_overlap"], "overlap_score": 0.38}, {"existing_object_id": "dark_resin", "similarity_reason": ["family_overlap", "axis_overlap", "keyword_overlap"], "overlap_score": 0.14}, {"existing_object_id": "amber_glow", "similarity_reason": ["family_overlap", "keyword_overlap"], "overlap_score": 0.12}, {"existing_object_id": "dark_chocolate", "similarity_reason": ["axis_overlap"], "overlap_score": 0.08}]
 - peat_smoke: similar=[{"existing_object_id": "fireplace_ash", "similarity_reason": ["related_existing_object", "family_overlap", "axis_overlap"], "overlap_score": 0.46}, {"existing_object_id": "charred_oak", "similarity_reason": ["related_existing_object", "axis_overlap"], "overlap_score": 0.43}, {"existing_object_id": "forest_floor", "similarity_reason": ["related_existing_object", "axis_overlap", "keyword_overlap"], "overlap_score": 0.41}, {"existing_object_id": "dark_chocolate", "similarity_reason": ["axis_overlap"], "overlap_score": 0.08}, {"existing_object_id": "tobacco_leaf", "similarity_reason": ["axis_overlap", "keyword_overlap"], "overlap_score": 0.08}]
 - oak_tannin_dryness: similar=[{"existing_object_id": "cedarwood", "similarity_reason": ["related_existing_object", "family_overlap", "axis_overlap", "keyword_overlap"], "overlap_score": 0.49}, {"existing_object_id": "charred_oak", "similarity_reason": ["related_existing_object", "family_overlap", "axis_overlap", "keyword_overlap"], "overlap_score": 0.49}, {"existing_object_id": "black_tea", "similarity_reason": ["related_existing_object", "axis_overlap", "keyword_overlap"], "overlap_score": 0.41}, {"existing_object_id": "old_wood", "similarity_reason": ["family_overlap", "axis_overlap", "keyword_overlap"], "overlap_score": 0.14}, {"existing_object_id": "cashmere", "similarity_reason": ["axis_overlap"], "overlap_score": 0.08}]
 - medicinal_smoke: similar=[{"existing_object_id": "fireplace_ash", "similarity_reason": ["related_existing_object", "family_overlap", "axis_overlap", "keyword_overlap"], "overlap_score": 0.47}, {"existing_object_id": "cold_metal", "similarity_reason": ["related_existing_object", "keyword_overlap"], "overlap_score": 0.36}, {"existing_object_id": "dark_chocolate", "similarity_reason": ["axis_overlap"], "overlap_score": 0.08}, {"existing_object_id": "tobacco_leaf", "similarity_reason": ["axis_overlap", "keyword_overlap"], "overlap_score": 0.08}, {"existing_object_id": "charred_oak", "similarity_reason": ["axis_overlap"], "overlap_score": 0.08}]

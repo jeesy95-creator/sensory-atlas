@@ -53,7 +53,6 @@ def test_candidate_review_status_values_are_valid() -> None:
     assert status
     for row in status.values():
         assert row["review_status"] in ALLOWED_REVIEW_STATUSES
-        assert row["review_status"] != "merged"
         assert row["recommended_action"] in RECOMMENDED_ACTIONS
         assert row["priority"] in {"high", "medium", "low"}
 

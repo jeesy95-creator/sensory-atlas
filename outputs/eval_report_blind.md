@@ -28,7 +28,7 @@
 | blind_018 | True | True | False | fireplace_ash, charred_oak, slate | fireplace_ash, old_wood, tobacco_leaf |
 | blind_019 | True | True | False | citrus_peel, green_stem, fresh_linen | citrus_peel, green_stem, fresh_linen |
 | blind_020 | True | True | False | green_stem, wet_moss, after_rain_garden | green_stem, wet_moss, after_rain_garden |
-| blind_021 | True | True | False | dry_herb, black_tea, cedarwood | black_tea, dry_herb, cedarwood |
+| blind_021 | True | True | False | dry_herb, black_tea, cedarwood | black_tea, dry_herb, green_stem |
 | blind_022 | True | True | False | butter_toast, vanilla_cream, roasted_almond | butter_toast, vanilla_cream, roasted_almond |
 | blind_023 | True | True | False | vanilla_cream, honeycomb, butter_toast | vanilla_cream, butter_toast, honeycomb |
 | blind_024 | True | True | False | honeycomb, vanilla_cream, burnt_sugar | burnt_sugar, honeycomb, butter_toast |
