@@ -14,6 +14,7 @@ from sensory_atlas.loaders import (
 )
 from sensory_atlas.evaluator import evaluate_parser, write_eval_report
 from sensory_atlas.parser import parse_sentence
+from sensory_atlas.candidate_workflow import write_candidate_review_outputs
 
 
 DATASET_PATHS = {
@@ -100,6 +101,21 @@ def evaluate(args: argparse.Namespace) -> int:
     return 0
 
 
+def review_candidates(args: argparse.Namespace) -> int:
+    report_path, summary_path, rows = write_candidate_review_outputs(
+        args.report_path,
+        args.summary_path,
+    )
+    ready_count = sum(1 for row in rows if row["recommended_action"] == "ready_for_curated_merge")
+    distinction_count = sum(1 for row in rows if row["recommended_action"] == "needs_distinction_review")
+    print(f"Total candidates: {len(rows)}")
+    print(f"Ready for curated merge: {ready_count}")
+    print(f"Needs distinction review: {distinction_count}")
+    print(f"Report saved to {report_path.resolve()}")
+    print(f"Summary saved to {summary_path.resolve()}")
+    return 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="sensory-atlas")
     subparsers = parser.add_subparsers(dest="command", required=True)
@@ -120,6 +136,11 @@ def build_parser() -> argparse.ArgumentParser:
     eval_parser.add_argument("--tests-path", type=Path, default=None)
     eval_parser.add_argument("--output-path", type=Path, default=None)
     eval_parser.set_defaults(func=evaluate)
+
+    review = subparsers.add_parser("review-candidates", help="Generate candidate object review report")
+    review.add_argument("--report-path", type=Path, default=project_root() / "outputs" / "candidate_review_report.md")
+    review.add_argument("--summary-path", type=Path, default=project_root() / "outputs" / "candidate_review_summary.json")
+    review.set_defaults(func=review_candidates)
 
     return parser
 

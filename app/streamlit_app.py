@@ -15,8 +15,12 @@ if str(SRC_DIR) not in sys.path:
 from sensory_atlas.loaders import load_test_sentences
 from sensory_atlas.parser import parse_sentence
 from sensory_atlas.ui_helpers import (
+    candidate_detail_for_display,
+    candidate_review_rows_to_dataframe,
     evaluate_all_datasets,
     get_object_lookup,
+    get_candidate_lookup,
+    load_candidate_review_for_ui,
     load_objects_for_ui,
     objects_to_dataframe,
     parser_output_to_display_dict,
@@ -42,6 +46,11 @@ def cached_objects():
 @st.cache_data
 def cached_evaluation():
     return evaluate_all_datasets(PROJECT_ROOT)
+
+
+@st.cache_data
+def cached_candidate_review():
+    return load_candidate_review_for_ui(PROJECT_ROOT)
 
 
 def render_axes(axes: dict[str, str]) -> None:
@@ -225,6 +234,94 @@ def render_ontology_browser(objects) -> None:
         st.write("**Evidence refs**", selected.evidence_refs)
 
 
+def render_candidate_review() -> None:
+    st.subheader("Candidate Review")
+    st.warning("이 탭은 candidate object 검토용입니다. 여기서 main ontology에 자동 병합하지 않습니다.")
+
+    review = cached_candidate_review()
+    rows = review["rows"]
+    candidates = review["candidates"]
+    existing_objects = review["existing_objects"]
+    candidate_lookup = get_candidate_lookup(candidates)
+    df = candidate_review_rows_to_dataframe(rows)
+
+    summary = review["summary"]
+    metric_keys = [
+        "ready_for_curated_merge",
+        "needs_more_examples",
+        "needs_distinction_review",
+        "keep_as_candidate",
+        "do_not_merge_yet",
+    ]
+    metric_cols = st.columns(6)
+    metric_cols[0].metric("total candidates", len(rows))
+    for col, key in zip(metric_cols[1:], metric_keys, strict=False):
+        col.metric(key, summary.get(key, 0))
+
+    all_domains = sorted({domain for row in rows for domain in row.get("source_domains", [])})
+    all_actions = sorted({row.get("recommended_action", "") for row in rows})
+    all_statuses = sorted({row.get("review_status", "") for row in rows})
+
+    col1, col2, col3 = st.columns(3)
+    domain_filter = col1.selectbox("Source domain", ["All"] + all_domains)
+    action_filter = col2.selectbox("Recommended action", ["All"] + all_actions)
+    status_filter = col3.selectbox("Review status", ["All"] + all_statuses)
+    query = st.text_input("Search candidate")
+
+    filtered = df.copy()
+    if domain_filter != "All":
+        filtered = filtered[filtered["source_domains"].str.contains(domain_filter, na=False)]
+    if action_filter != "All":
+        filtered = filtered[filtered["recommended_action"] == action_filter]
+    if status_filter != "All":
+        filtered = filtered[filtered["review_status"] == status_filter]
+    if query:
+        q = query.casefold()
+        mask = (
+            filtered["candidate_object_id"].str.casefold().str.contains(q, na=False)
+            | filtered["korean_label"].str.casefold().str.contains(q, na=False)
+        )
+        filtered = filtered[mask]
+
+    st.markdown("### Candidate Table")
+    st.dataframe(filtered, hide_index=True, use_container_width=True)
+
+    if filtered.empty:
+        st.caption("No candidates match the current filters.")
+        return
+
+    selected_id = st.selectbox("Select candidate", filtered["candidate_object_id"].tolist())
+    selected = candidate_lookup[selected_id]
+    selected_row = next(row for row in rows if row["candidate_object_id"] == selected_id)
+    detail = candidate_detail_for_display(selected, existing_objects)
+
+    st.markdown("### Candidate Detail")
+    st.write(f"**{selected.get('korean_label')} / {selected.get('label')}**")
+    st.caption(selected.get("definition", ""))
+    cols = st.columns(4)
+    cols[0].metric("recommended_action", selected_row["recommended_action"])
+    cols[1].metric("readiness", f"{selected_row['overall_readiness_score']:.2f}")
+    cols[2].metric("note risk", f"{selected_row['note_dictionary_risk']:.2f}")
+    cols[3].metric("review_status", selected_row["review_status"])
+
+    with st.expander("Core axes", expanded=True):
+        st.json(selected.get("core_axes", {}))
+    st.write("**Example expressions**", selected.get("example_expressions", []))
+    st.write("**Suggested phrase cues**", selected.get("suggested_phrase_cues", []))
+    st.write("**Negative cues**", selected.get("negative_cues", []))
+    st.write("**Related existing objects**", selected.get("related_existing_objects", []))
+
+    st.markdown("### Similar Existing Objects")
+    similar = detail["similar_existing_objects"]
+    if similar:
+        st.dataframe(pd.DataFrame(similar), hide_index=True, use_container_width=True)
+    else:
+        st.caption("No similar existing objects found by the rule-based comparison.")
+
+    with st.expander("Promotion draft JSON"):
+        st.json(detail["promotion_draft"])
+
+
 def main() -> None:
     st.set_page_config(page_title="Sensory Atlas", layout="wide")
     st.title("Sensory Atlas")
@@ -232,7 +329,9 @@ def main() -> None:
 
     objects = cached_objects()
     object_lookup = get_object_lookup(objects)
-    parse_tab, eval_tab, ontology_tab = st.tabs(["Parse Demo", "Evaluation Dashboard", "Ontology Browser"])
+    parse_tab, eval_tab, ontology_tab, candidate_tab = st.tabs(
+        ["Parse Demo", "Evaluation Dashboard", "Ontology Browser", "Candidate Review"]
+    )
 
     with parse_tab:
         render_parse_demo(objects, object_lookup)
@@ -240,6 +339,8 @@ def main() -> None:
         render_evaluation_dashboard()
     with ontology_tab:
         render_ontology_browser(objects)
+    with candidate_tab:
+        render_candidate_review()
 
 
 if __name__ == "__main__":

@@ -7,6 +7,15 @@ from typing import Any
 
 import pandas as pd
 
+from sensory_atlas.candidate_workflow import (
+    build_candidate_review_rows,
+    compare_candidate_to_existing,
+    generate_promotion_draft,
+    load_candidate_objects,
+    load_candidate_review_status,
+    load_existing_objects,
+    summarize_candidate_actions,
+)
 from sensory_atlas.evaluator import EvaluationReport, evaluate_parser
 from sensory_atlas.loaders import load_sensory_objects, load_test_sentences, project_root
 from sensory_atlas.schema import ParserOutput, SensoryObject
@@ -96,6 +105,60 @@ def axis_evidence_to_dataframe(output: ParserOutput) -> pd.DataFrame:
             }
         )
     return pd.DataFrame(rows)
+
+
+def format_readiness_score(score: float | None) -> str:
+    if score is None:
+        return ""
+    return f"{score:.2f}"
+
+
+def candidate_review_rows_to_dataframe(rows: list[dict[str, Any]]) -> pd.DataFrame:
+    display_rows: list[dict[str, Any]] = []
+    for row in rows:
+        display_rows.append(
+            {
+                "candidate_object_id": row.get("candidate_object_id"),
+                "korean_label": row.get("korean_label"),
+                "source_domains": format_axis_value(row.get("source_domains", [])),
+                "family": row.get("family"),
+                "review_status": row.get("review_status"),
+                "recommended_action": row.get("recommended_action"),
+                "readiness_score": format_readiness_score(row.get("overall_readiness_score")),
+                "note_dictionary_risk": format_readiness_score(row.get("note_dictionary_risk")),
+            }
+        )
+    return pd.DataFrame(display_rows)
+
+
+def load_candidate_review_for_ui(root: str | Path | None = None) -> dict[str, Any]:
+    root_path = Path(root) if root else project_root()
+    candidates = load_candidate_objects(root_path / "data" / "sensory_object_candidates.jsonl")
+    existing = load_existing_objects(root_path / "data" / "sensory_objects.jsonl")
+    status = load_candidate_review_status(root_path / "data" / "candidate_review_status.jsonl")
+    rows = build_candidate_review_rows(candidates, existing, status)
+    return {
+        "candidates": candidates,
+        "existing_objects": existing,
+        "review_status": status,
+        "rows": rows,
+        "summary": summarize_candidate_actions(rows),
+    }
+
+
+def get_candidate_lookup(candidates: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:
+    return {str(candidate["candidate_object_id"]): candidate for candidate in candidates}
+
+
+def candidate_detail_for_display(
+    candidate: dict[str, Any],
+    existing_objects: list[dict[str, Any]],
+) -> dict[str, Any]:
+    return {
+        "candidate": candidate,
+        "similar_existing_objects": compare_candidate_to_existing(candidate, existing_objects),
+        "promotion_draft": generate_promotion_draft(candidate),
+    }
 
 
 def _object_display_row(object_id: str, score: float | None, rank: int | None, lookup: dict[str, SensoryObject]) -> dict[str, Any]:

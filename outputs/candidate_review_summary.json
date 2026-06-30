@@ -1,0 +1,3087 @@
+{
+  "total_candidates": 47,
+  "recommended_actions": {
+    "do_not_merge_yet": 0,
+    "keep_as_axis_descriptor": 0,
+    "keep_as_candidate": 18,
+    "needs_distinction_review": 12,
+    "needs_more_examples": 0,
+    "ready_for_curated_merge": 17
+  },
+  "rows": [
+    {
+      "candidate_object_id": "bergamot_brightness",
+      "korean_label": "베르가못의 차갑고 쌉싸름한 밝기",
+      "label": "Bergamot Brightness",
+      "source_domains": [
+        "fragrance",
+        "cross_domain"
+      ],
+      "family": "Citrus / Bright / Bitter",
+      "review_status": "unreviewed",
+      "recommended_action": "keep_as_candidate",
+      "priority": "medium",
+      "reviewer_notes": "",
+      "promoted_to_object_id": null,
+      "reviewed_at": null,
+      "sensory_archetype_score": 0.73,
+      "cross_domain_reuse_score": 0.65,
+      "distinctiveness_score": 0.59,
+      "example_coverage_score": 0.65,
+      "phrase_cue_readiness_score": 0.65,
+      "negative_cue_readiness_score": 1.0,
+      "note_dictionary_risk": 0.33,
+      "overall_readiness_score": 0.65,
+      "similar_existing_objects": [
+        {
+          "existing_object_id": "citrus_peel",
+          "similarity_reason": [
+            "related_existing_object",
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.41
+        },
+        {
+          "existing_object_id": "fresh_linen",
+          "similarity_reason": [
+            "related_existing_object",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.38
+        },
+        {
+          "existing_object_id": "four_k_clarity",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.06
+        },
+        {
+          "existing_object_id": "silk",
+          "similarity_reason": [],
+          "overlap_score": 0.03
+        },
+        {
+          "existing_object_id": "organza",
+          "similarity_reason": [],
+          "overlap_score": 0.03
+        }
+      ]
+    },
+    {
+      "candidate_object_id": "neroli_air",
+      "korean_label": "네롤리의 하얗고 맑은 공기",
+      "label": "Neroli Air",
+      "source_domains": [
+        "fragrance"
+      ],
+      "family": "Floral / Citrus / Air",
+      "review_status": "unreviewed",
+      "recommended_action": "keep_as_candidate",
+      "priority": "medium",
+      "reviewer_notes": "",
+      "promoted_to_object_id": null,
+      "reviewed_at": null,
+      "sensory_archetype_score": 0.93,
+      "cross_domain_reuse_score": 0.35,
+      "distinctiveness_score": 0.6,
+      "example_coverage_score": 0.65,
+      "phrase_cue_readiness_score": 0.65,
+      "negative_cue_readiness_score": 1.0,
+      "note_dictionary_risk": 0.23,
+      "overall_readiness_score": 0.66,
+      "similar_existing_objects": [
+        {
+          "existing_object_id": "citrus_peel",
+          "similarity_reason": [
+            "related_existing_object",
+            "axis_overlap"
+          ],
+          "overlap_score": 0.4
+        },
+        {
+          "existing_object_id": "fresh_linen",
+          "similarity_reason": [
+            "related_existing_object",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.38
+        },
+        {
+          "existing_object_id": "mountain_stream",
+          "similarity_reason": [
+            "family_overlap"
+          ],
+          "overlap_score": 0.09
+        },
+        {
+          "existing_object_id": "sea_breeze",
+          "similarity_reason": [
+            "family_overlap"
+          ],
+          "overlap_score": 0.09
+        },
+        {
+          "existing_object_id": "cold_fog",
+          "similarity_reason": [
+            "family_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.07
+        }
+      ]
+    },
+    {
+      "candidate_object_id": "orange_blossom_softness",
+      "korean_label": "오렌지 블로섬의 부드러운 흰 꽃감",
+      "label": "Orange Blossom Softness",
+      "source_domains": [
+        "fragrance"
+      ],
+      "family": "Floral / Soft Citrus",
+      "review_status": "unreviewed",
+      "recommended_action": "keep_as_candidate",
+      "priority": "medium",
+      "reviewer_notes": "",
+      "promoted_to_object_id": null,
+      "reviewed_at": null,
+      "sensory_archetype_score": 0.93,
+      "cross_domain_reuse_score": 0.35,
+      "distinctiveness_score": 0.62,
+      "example_coverage_score": 0.65,
+      "phrase_cue_readiness_score": 0.65,
+      "negative_cue_readiness_score": 1.0,
+      "note_dictionary_risk": 0.23,
+      "overall_readiness_score": 0.66,
+      "similar_existing_objects": [
+        {
+          "existing_object_id": "fresh_linen",
+          "similarity_reason": [
+            "related_existing_object",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.38
+        },
+        {
+          "existing_object_id": "warm_cotton",
+          "similarity_reason": [
+            "related_existing_object",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.36
+        },
+        {
+          "existing_object_id": "citrus_peel",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.05
+        },
+        {
+          "existing_object_id": "four_k_clarity",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.05
+        },
+        {
+          "existing_object_id": "silk",
+          "similarity_reason": [],
+          "overlap_score": 0.03
+        }
+      ]
+    },
+    {
+      "candidate_object_id": "white_musk_clean_skin",
+      "korean_label": "화이트 머스크의 깨끗한 살냄새",
+      "label": "White Musk Clean Skin",
+      "source_domains": [
+        "fragrance",
+        "cross_domain"
+      ],
+      "family": "Clean / Musk / Skin",
+      "review_status": "unreviewed",
+      "recommended_action": "needs_distinction_review",
+      "priority": "medium",
+      "reviewer_notes": "",
+      "promoted_to_object_id": null,
+      "reviewed_at": null,
+      "sensory_archetype_score": 0.93,
+      "cross_domain_reuse_score": 0.65,
+      "distinctiveness_score": 0.54,
+      "example_coverage_score": 0.65,
+      "phrase_cue_readiness_score": 0.65,
+      "negative_cue_readiness_score": 1.0,
+      "note_dictionary_risk": 0.13,
+      "overall_readiness_score": 0.71,
+      "similar_existing_objects": [
+        {
+          "existing_object_id": "fresh_linen",
+          "similarity_reason": [
+            "related_existing_object",
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.46
+        },
+        {
+          "existing_object_id": "clean_room",
+          "similarity_reason": [
+            "related_existing_object",
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.46
+        },
+        {
+          "existing_object_id": "warm_cotton",
+          "similarity_reason": [
+            "related_existing_object",
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.44
+        },
+        {
+          "existing_object_id": "after_rain_garden",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "green_stem",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.07
+        }
+      ]
+    },
+    {
+      "candidate_object_id": "skin_musk_warmth",
+      "korean_label": "체온이 섞인 살갗 머스크",
+      "label": "Skin Musk Warmth",
+      "source_domains": [
+        "fragrance",
+        "cross_domain"
+      ],
+      "family": "Warm / Skin / Musk",
+      "review_status": "unreviewed",
+      "recommended_action": "keep_as_candidate",
+      "priority": "medium",
+      "reviewer_notes": "",
+      "promoted_to_object_id": null,
+      "reviewed_at": null,
+      "sensory_archetype_score": 0.93,
+      "cross_domain_reuse_score": 0.65,
+      "distinctiveness_score": 0.57,
+      "example_coverage_score": 0.65,
+      "phrase_cue_readiness_score": 0.65,
+      "negative_cue_readiness_score": 1.0,
+      "note_dictionary_risk": 0.13,
+      "overall_readiness_score": 0.72,
+      "similar_existing_objects": [
+        {
+          "existing_object_id": "cashmere",
+          "similarity_reason": [
+            "related_existing_object",
+            "axis_overlap"
+          ],
+          "overlap_score": 0.43
+        },
+        {
+          "existing_object_id": "warm_cotton",
+          "similarity_reason": [
+            "related_existing_object",
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.41
+        },
+        {
+          "existing_object_id": "wool_blanket",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "film_grain",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "cedarwood",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.06
+        }
+      ]
+    },
+    {
+      "candidate_object_id": "amber_glow",
+      "korean_label": "앰버의 따뜻한 금빛 잔향",
+      "label": "Amber Glow",
+      "source_domains": [
+        "fragrance",
+        "cross_domain"
+      ],
+      "family": "Amber / Resin / Golden",
+      "review_status": "unreviewed",
+      "recommended_action": "ready_for_curated_merge",
+      "priority": "medium",
+      "reviewer_notes": "",
+      "promoted_to_object_id": null,
+      "reviewed_at": null,
+      "sensory_archetype_score": 0.93,
+      "cross_domain_reuse_score": 0.65,
+      "distinctiveness_score": 0.6,
+      "example_coverage_score": 0.65,
+      "phrase_cue_readiness_score": 0.65,
+      "negative_cue_readiness_score": 1.0,
+      "note_dictionary_risk": 0.13,
+      "overall_readiness_score": 0.72,
+      "similar_existing_objects": [
+        {
+          "existing_object_id": "vanilla_cream",
+          "similarity_reason": [
+            "related_existing_object",
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.4
+        },
+        {
+          "existing_object_id": "honeycomb",
+          "similarity_reason": [
+            "related_existing_object",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.38
+        },
+        {
+          "existing_object_id": "cashmere",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "wool_blanket",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "film_grain",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.08
+        }
+      ]
+    },
+    {
+      "candidate_object_id": "powder_cloud",
+      "korean_label": "가루처럼 부드럽게 흐려지는 구름감",
+      "label": "Powder Cloud",
+      "source_domains": [
+        "fragrance",
+        "cross_domain"
+      ],
+      "family": "Powdery / Soft / Muted",
+      "review_status": "unreviewed",
+      "recommended_action": "ready_for_curated_merge",
+      "priority": "medium",
+      "reviewer_notes": "",
+      "promoted_to_object_id": null,
+      "reviewed_at": null,
+      "sensory_archetype_score": 0.93,
+      "cross_domain_reuse_score": 0.65,
+      "distinctiveness_score": 0.59,
+      "example_coverage_score": 0.65,
+      "phrase_cue_readiness_score": 0.65,
+      "negative_cue_readiness_score": 1.0,
+      "note_dictionary_risk": 0.0,
+      "overall_readiness_score": 0.74,
+      "similar_existing_objects": [
+        {
+          "existing_object_id": "warm_cotton",
+          "similarity_reason": [
+            "related_existing_object",
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.41
+        },
+        {
+          "existing_object_id": "velvet",
+          "similarity_reason": [
+            "related_existing_object",
+            "axis_overlap"
+          ],
+          "overlap_score": 0.4
+        },
+        {
+          "existing_object_id": "cashmere",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "wool_blanket",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "film_grain",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.08
+        }
+      ]
+    },
+    {
+      "candidate_object_id": "aldehydic_sparkle",
+      "korean_label": "비누 거품처럼 튀는 차가운 반짝임",
+      "label": "Aldehydic Sparkle",
+      "source_domains": [
+        "fragrance"
+      ],
+      "family": "Clean / Sparkling",
+      "review_status": "unreviewed",
+      "recommended_action": "needs_distinction_review",
+      "priority": "medium",
+      "reviewer_notes": "",
+      "promoted_to_object_id": null,
+      "reviewed_at": null,
+      "sensory_archetype_score": 0.73,
+      "cross_domain_reuse_score": 0.35,
+      "distinctiveness_score": 0.54,
+      "example_coverage_score": 0.65,
+      "phrase_cue_readiness_score": 0.65,
+      "negative_cue_readiness_score": 1.0,
+      "note_dictionary_risk": 0.25,
+      "overall_readiness_score": 0.61,
+      "similar_existing_objects": [
+        {
+          "existing_object_id": "clean_room",
+          "similarity_reason": [
+            "related_existing_object",
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.46
+        },
+        {
+          "existing_object_id": "silver_spoon",
+          "similarity_reason": [
+            "related_existing_object",
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.41
+        },
+        {
+          "existing_object_id": "fresh_linen",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.11
+        },
+        {
+          "existing_object_id": "warm_cotton",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "after_rain_garden",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.08
+        }
+      ]
+    },
+    {
+      "candidate_object_id": "ozonic_air",
+      "korean_label": "비 온 뒤 창문을 연 듯한 오조닉 공기",
+      "label": "Ozonic Air",
+      "source_domains": [
+        "fragrance",
+        "cross_domain"
+      ],
+      "family": "Air / Cool / Clean",
+      "review_status": "unreviewed",
+      "recommended_action": "needs_distinction_review",
+      "priority": "medium",
+      "reviewer_notes": "",
+      "promoted_to_object_id": null,
+      "reviewed_at": null,
+      "sensory_archetype_score": 0.93,
+      "cross_domain_reuse_score": 0.65,
+      "distinctiveness_score": 0.54,
+      "example_coverage_score": 0.65,
+      "phrase_cue_readiness_score": 0.65,
+      "negative_cue_readiness_score": 1.0,
+      "note_dictionary_risk": 0.0,
+      "overall_readiness_score": 0.74,
+      "similar_existing_objects": [
+        {
+          "existing_object_id": "clean_room",
+          "similarity_reason": [
+            "related_existing_object",
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.46
+        },
+        {
+          "existing_object_id": "cold_fog",
+          "similarity_reason": [
+            "related_existing_object",
+            "family_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.45
+        },
+        {
+          "existing_object_id": "fresh_linen",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.11
+        },
+        {
+          "existing_object_id": "sea_breeze",
+          "similarity_reason": [
+            "family_overlap",
+            "axis_overlap"
+          ],
+          "overlap_score": 0.11
+        },
+        {
+          "existing_object_id": "mountain_stream",
+          "similarity_reason": [
+            "family_overlap"
+          ],
+          "overlap_score": 0.09
+        }
+      ]
+    },
+    {
+      "candidate_object_id": "aquatic_clean_water",
+      "korean_label": "깨끗하게 흐르는 아쿠아틱 물기",
+      "label": "Aquatic Clean Water",
+      "source_domains": [
+        "fragrance",
+        "cross_domain"
+      ],
+      "family": "Water / Clean / Flow",
+      "review_status": "unreviewed",
+      "recommended_action": "needs_distinction_review",
+      "priority": "medium",
+      "reviewer_notes": "",
+      "promoted_to_object_id": null,
+      "reviewed_at": null,
+      "sensory_archetype_score": 0.93,
+      "cross_domain_reuse_score": 0.65,
+      "distinctiveness_score": 0.54,
+      "example_coverage_score": 0.65,
+      "phrase_cue_readiness_score": 0.65,
+      "negative_cue_readiness_score": 1.0,
+      "note_dictionary_risk": 0.0,
+      "overall_readiness_score": 0.74,
+      "similar_existing_objects": [
+        {
+          "existing_object_id": "sea_breeze",
+          "similarity_reason": [
+            "related_existing_object",
+            "family_overlap",
+            "axis_overlap"
+          ],
+          "overlap_score": 0.46
+        },
+        {
+          "existing_object_id": "mountain_stream",
+          "similarity_reason": [
+            "related_existing_object",
+            "family_overlap"
+          ],
+          "overlap_score": 0.44
+        },
+        {
+          "existing_object_id": "fresh_linen",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.11
+        },
+        {
+          "existing_object_id": "clean_room",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.11
+        },
+        {
+          "existing_object_id": "cold_fog",
+          "similarity_reason": [
+            "family_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.1
+        }
+      ]
+    },
+    {
+      "candidate_object_id": "lactonic_milk_softness",
+      "korean_label": "우유처럼 하얗고 둥근 부드러움",
+      "label": "Lactonic Milk Softness",
+      "source_domains": [
+        "fragrance",
+        "coffee",
+        "cross_domain"
+      ],
+      "family": "Milky / Creamy / Soft",
+      "review_status": "unreviewed",
+      "recommended_action": "ready_for_curated_merge",
+      "priority": "medium",
+      "reviewer_notes": "",
+      "promoted_to_object_id": null,
+      "reviewed_at": null,
+      "sensory_archetype_score": 0.93,
+      "cross_domain_reuse_score": 1.0,
+      "distinctiveness_score": 0.59,
+      "example_coverage_score": 0.65,
+      "phrase_cue_readiness_score": 0.65,
+      "negative_cue_readiness_score": 1.0,
+      "note_dictionary_risk": 0.0,
+      "overall_readiness_score": 0.8,
+      "similar_existing_objects": [
+        {
+          "existing_object_id": "warm_cotton",
+          "similarity_reason": [
+            "related_existing_object",
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.41
+        },
+        {
+          "existing_object_id": "vanilla_cream",
+          "similarity_reason": [
+            "related_existing_object",
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.41
+        },
+        {
+          "existing_object_id": "cashmere",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "wool_blanket",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "film_grain",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.08
+        }
+      ]
+    },
+    {
+      "candidate_object_id": "fig_leaf_green",
+      "korean_label": "무화과 잎의 초록 밀키함",
+      "label": "Fig Leaf Green",
+      "source_domains": [
+        "fragrance",
+        "wine",
+        "whisky"
+      ],
+      "family": "Green / Milky / Fruit",
+      "review_status": "unreviewed",
+      "recommended_action": "ready_for_curated_merge",
+      "priority": "medium",
+      "reviewer_notes": "",
+      "promoted_to_object_id": null,
+      "reviewed_at": null,
+      "sensory_archetype_score": 0.93,
+      "cross_domain_reuse_score": 1.0,
+      "distinctiveness_score": 0.62,
+      "example_coverage_score": 0.65,
+      "phrase_cue_readiness_score": 0.65,
+      "negative_cue_readiness_score": 1.0,
+      "note_dictionary_risk": 0.0,
+      "overall_readiness_score": 0.81,
+      "similar_existing_objects": [
+        {
+          "existing_object_id": "honeycomb",
+          "similarity_reason": [
+            "related_existing_object",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.38
+        },
+        {
+          "existing_object_id": "green_stem",
+          "similarity_reason": [
+            "related_existing_object",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.35
+        },
+        {
+          "existing_object_id": "warm_cotton",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.06
+        },
+        {
+          "existing_object_id": "film_grain",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.06
+        },
+        {
+          "existing_object_id": "cashmere",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.05
+        }
+      ]
+    },
+    {
+      "candidate_object_id": "incense_smoke",
+      "korean_label": "조용히 올라가는 마른 인센스 연기",
+      "label": "Incense Smoke",
+      "source_domains": [
+        "fragrance",
+        "cross_domain"
+      ],
+      "family": "Smoke / Resin / Dry",
+      "review_status": "unreviewed",
+      "recommended_action": "needs_distinction_review",
+      "priority": "medium",
+      "reviewer_notes": "",
+      "promoted_to_object_id": null,
+      "reviewed_at": null,
+      "sensory_archetype_score": 0.93,
+      "cross_domain_reuse_score": 0.65,
+      "distinctiveness_score": 0.53,
+      "example_coverage_score": 0.65,
+      "phrase_cue_readiness_score": 0.65,
+      "negative_cue_readiness_score": 1.0,
+      "note_dictionary_risk": 0.0,
+      "overall_readiness_score": 0.73,
+      "similar_existing_objects": [
+        {
+          "existing_object_id": "fireplace_ash",
+          "similarity_reason": [
+            "related_existing_object",
+            "family_overlap",
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.47
+        },
+        {
+          "existing_object_id": "old_library",
+          "similarity_reason": [
+            "related_existing_object",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.38
+        },
+        {
+          "existing_object_id": "dark_chocolate",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "tobacco_leaf",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "charred_oak",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        }
+      ]
+    },
+    {
+      "candidate_object_id": "peat_smoke",
+      "korean_label": "젖은 흙과 마른 연기가 섞인 피트 스모크",
+      "label": "Peat Smoke",
+      "source_domains": [
+        "whisky",
+        "cross_domain"
+      ],
+      "family": "Smoke / Earth / Dark",
+      "review_status": "unreviewed",
+      "recommended_action": "needs_distinction_review",
+      "priority": "medium",
+      "reviewer_notes": "",
+      "promoted_to_object_id": null,
+      "reviewed_at": null,
+      "sensory_archetype_score": 0.93,
+      "cross_domain_reuse_score": 0.65,
+      "distinctiveness_score": 0.54,
+      "example_coverage_score": 0.65,
+      "phrase_cue_readiness_score": 0.65,
+      "negative_cue_readiness_score": 1.0,
+      "note_dictionary_risk": 0.0,
+      "overall_readiness_score": 0.74,
+      "similar_existing_objects": [
+        {
+          "existing_object_id": "fireplace_ash",
+          "similarity_reason": [
+            "related_existing_object",
+            "family_overlap",
+            "axis_overlap"
+          ],
+          "overlap_score": 0.46
+        },
+        {
+          "existing_object_id": "charred_oak",
+          "similarity_reason": [
+            "related_existing_object",
+            "axis_overlap"
+          ],
+          "overlap_score": 0.43
+        },
+        {
+          "existing_object_id": "forest_floor",
+          "similarity_reason": [
+            "related_existing_object",
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.41
+        },
+        {
+          "existing_object_id": "dark_chocolate",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "tobacco_leaf",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.08
+        }
+      ]
+    },
+    {
+      "candidate_object_id": "iodine_coast",
+      "korean_label": "아이오딘과 해안 공기의 차가운 짠맛",
+      "label": "Iodine Coast",
+      "source_domains": [
+        "whisky",
+        "cross_domain"
+      ],
+      "family": "Coastal / Medicinal / Salty",
+      "review_status": "unreviewed",
+      "recommended_action": "ready_for_curated_merge",
+      "priority": "medium",
+      "reviewer_notes": "",
+      "promoted_to_object_id": null,
+      "reviewed_at": null,
+      "sensory_archetype_score": 0.93,
+      "cross_domain_reuse_score": 0.65,
+      "distinctiveness_score": 0.62,
+      "example_coverage_score": 0.65,
+      "phrase_cue_readiness_score": 0.65,
+      "negative_cue_readiness_score": 1.0,
+      "note_dictionary_risk": 0.0,
+      "overall_readiness_score": 0.75,
+      "similar_existing_objects": [
+        {
+          "existing_object_id": "sea_breeze",
+          "similarity_reason": [
+            "related_existing_object"
+          ],
+          "overlap_score": 0.38
+        },
+        {
+          "existing_object_id": "silver_spoon",
+          "similarity_reason": [
+            "related_existing_object",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.36
+        },
+        {
+          "existing_object_id": "cashmere",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "wool_blanket",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "film_grain",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.08
+        }
+      ]
+    },
+    {
+      "candidate_object_id": "sherry_dried_fruit",
+      "korean_label": "셰리 캐스크의 어두운 말린 과일감",
+      "label": "Sherry Dried Fruit",
+      "source_domains": [
+        "whisky",
+        "wine"
+      ],
+      "family": "Dried Fruit / Aged / Dense",
+      "review_status": "unreviewed",
+      "recommended_action": "ready_for_curated_merge",
+      "priority": "medium",
+      "reviewer_notes": "",
+      "promoted_to_object_id": null,
+      "reviewed_at": null,
+      "sensory_archetype_score": 0.93,
+      "cross_domain_reuse_score": 0.65,
+      "distinctiveness_score": 0.62,
+      "example_coverage_score": 0.65,
+      "phrase_cue_readiness_score": 0.65,
+      "negative_cue_readiness_score": 1.0,
+      "note_dictionary_risk": 0.13,
+      "overall_readiness_score": 0.73,
+      "similar_existing_objects": [
+        {
+          "existing_object_id": "dark_chocolate",
+          "similarity_reason": [
+            "related_existing_object",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.38
+        },
+        {
+          "existing_object_id": "tobacco_leaf",
+          "similarity_reason": [
+            "related_existing_object",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.38
+        },
+        {
+          "existing_object_id": "barrel_cellar",
+          "similarity_reason": [
+            "related_existing_object"
+          ],
+          "overlap_score": 0.35
+        },
+        {
+          "existing_object_id": "warm_cotton",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.06
+        },
+        {
+          "existing_object_id": "film_grain",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.06
+        }
+      ]
+    },
+    {
+      "candidate_object_id": "bourbon_vanilla_oak",
+      "korean_label": "버번 캐스크의 바닐라 오크",
+      "label": "Bourbon Vanilla Oak",
+      "source_domains": [
+        "whisky",
+        "wine"
+      ],
+      "family": "Vanilla / Oak / Warm",
+      "review_status": "unreviewed",
+      "recommended_action": "keep_as_candidate",
+      "priority": "medium",
+      "reviewer_notes": "",
+      "promoted_to_object_id": null,
+      "reviewed_at": null,
+      "sensory_archetype_score": 0.73,
+      "cross_domain_reuse_score": 0.65,
+      "distinctiveness_score": 0.59,
+      "example_coverage_score": 0.65,
+      "phrase_cue_readiness_score": 0.65,
+      "negative_cue_readiness_score": 1.0,
+      "note_dictionary_risk": 0.51,
+      "overall_readiness_score": 0.62,
+      "similar_existing_objects": [
+        {
+          "existing_object_id": "vanilla_cream",
+          "similarity_reason": [
+            "related_existing_object",
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.41
+        },
+        {
+          "existing_object_id": "charred_oak",
+          "similarity_reason": [
+            "related_existing_object",
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.41
+        },
+        {
+          "existing_object_id": "cashmere",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "wool_blanket",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "film_grain",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.08
+        }
+      ]
+    },
+    {
+      "candidate_object_id": "oak_tannin_dryness",
+      "korean_label": "오크 타닌의 마른 조임",
+      "label": "Oak Tannin Dryness",
+      "source_domains": [
+        "whisky",
+        "wine",
+        "coffee"
+      ],
+      "family": "Wood / Tannin / Dry",
+      "review_status": "unreviewed",
+      "recommended_action": "needs_distinction_review",
+      "priority": "medium",
+      "reviewer_notes": "",
+      "promoted_to_object_id": null,
+      "reviewed_at": null,
+      "sensory_archetype_score": 0.73,
+      "cross_domain_reuse_score": 1.0,
+      "distinctiveness_score": 0.51,
+      "example_coverage_score": 0.65,
+      "phrase_cue_readiness_score": 0.65,
+      "negative_cue_readiness_score": 1.0,
+      "note_dictionary_risk": 0.33,
+      "overall_readiness_score": 0.7,
+      "similar_existing_objects": [
+        {
+          "existing_object_id": "cedarwood",
+          "similarity_reason": [
+            "related_existing_object",
+            "family_overlap",
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.49
+        },
+        {
+          "existing_object_id": "charred_oak",
+          "similarity_reason": [
+            "related_existing_object",
+            "family_overlap",
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.49
+        },
+        {
+          "existing_object_id": "black_tea",
+          "similarity_reason": [
+            "related_existing_object",
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.41
+        },
+        {
+          "existing_object_id": "old_wood",
+          "similarity_reason": [
+            "family_overlap",
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.14
+        },
+        {
+          "existing_object_id": "cashmere",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        }
+      ]
+    },
+    {
+      "candidate_object_id": "wax_polish",
+      "korean_label": "왁스로 닦은 오래된 표면의 윤기",
+      "label": "Wax Polish",
+      "source_domains": [
+        "whisky",
+        "cross_domain"
+      ],
+      "family": "Wax / Polish / Smooth",
+      "review_status": "unreviewed",
+      "recommended_action": "ready_for_curated_merge",
+      "priority": "medium",
+      "reviewer_notes": "",
+      "promoted_to_object_id": null,
+      "reviewed_at": null,
+      "sensory_archetype_score": 0.93,
+      "cross_domain_reuse_score": 0.65,
+      "distinctiveness_score": 0.62,
+      "example_coverage_score": 0.65,
+      "phrase_cue_readiness_score": 0.65,
+      "negative_cue_readiness_score": 1.0,
+      "note_dictionary_risk": 0.0,
+      "overall_readiness_score": 0.75,
+      "similar_existing_objects": [
+        {
+          "existing_object_id": "old_library",
+          "similarity_reason": [
+            "related_existing_object",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.38
+        },
+        {
+          "existing_object_id": "silver_spoon",
+          "similarity_reason": [
+            "related_existing_object"
+          ],
+          "overlap_score": 0.35
+        },
+        {
+          "existing_object_id": "cashmere",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "wool_blanket",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "film_grain",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.08
+        }
+      ]
+    },
+    {
+      "candidate_object_id": "medicinal_smoke",
+      "korean_label": "약품 같은 차가움이 섞인 스모크",
+      "label": "Medicinal Smoke",
+      "source_domains": [
+        "whisky"
+      ],
+      "family": "Medicinal / Smoke / Cool",
+      "review_status": "unreviewed",
+      "recommended_action": "needs_distinction_review",
+      "priority": "medium",
+      "reviewer_notes": "",
+      "promoted_to_object_id": null,
+      "reviewed_at": null,
+      "sensory_archetype_score": 0.93,
+      "cross_domain_reuse_score": 0.35,
+      "distinctiveness_score": 0.53,
+      "example_coverage_score": 0.65,
+      "phrase_cue_readiness_score": 0.65,
+      "negative_cue_readiness_score": 1.0,
+      "note_dictionary_risk": 0.05,
+      "overall_readiness_score": 0.68,
+      "similar_existing_objects": [
+        {
+          "existing_object_id": "fireplace_ash",
+          "similarity_reason": [
+            "related_existing_object",
+            "family_overlap",
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.47
+        },
+        {
+          "existing_object_id": "cold_metal",
+          "similarity_reason": [
+            "related_existing_object",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.36
+        },
+        {
+          "existing_object_id": "dark_chocolate",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "tobacco_leaf",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "charred_oak",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        }
+      ]
+    },
+    {
+      "candidate_object_id": "red_fruit_juiciness",
+      "korean_label": "붉은 과일의 밝은 과즙감",
+      "label": "Red Fruit Juiciness",
+      "source_domains": [
+        "wine",
+        "coffee"
+      ],
+      "family": "Fruit / Juicy / Bright",
+      "review_status": "unreviewed",
+      "recommended_action": "keep_as_candidate",
+      "priority": "medium",
+      "reviewer_notes": "",
+      "promoted_to_object_id": null,
+      "reviewed_at": null,
+      "sensory_archetype_score": 0.73,
+      "cross_domain_reuse_score": 0.65,
+      "distinctiveness_score": 0.62,
+      "example_coverage_score": 0.65,
+      "phrase_cue_readiness_score": 0.65,
+      "negative_cue_readiness_score": 1.0,
+      "note_dictionary_risk": 0.33,
+      "overall_readiness_score": 0.66,
+      "similar_existing_objects": [
+        {
+          "existing_object_id": "honeycomb",
+          "similarity_reason": [
+            "related_existing_object",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.38
+        },
+        {
+          "existing_object_id": "citrus_peel",
+          "similarity_reason": [
+            "related_existing_object"
+          ],
+          "overlap_score": 0.35
+        },
+        {
+          "existing_object_id": "warm_cotton",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.06
+        },
+        {
+          "existing_object_id": "vanilla_cream",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.06
+        },
+        {
+          "existing_object_id": "film_grain",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.06
+        }
+      ]
+    },
+    {
+      "candidate_object_id": "black_fruit_density",
+      "korean_label": "검은 과일의 두꺼운 밀도",
+      "label": "Black Fruit Density",
+      "source_domains": [
+        "wine",
+        "coffee"
+      ],
+      "family": "Fruit / Dense / Dark",
+      "review_status": "unreviewed",
+      "recommended_action": "ready_for_curated_merge",
+      "priority": "medium",
+      "reviewer_notes": "",
+      "promoted_to_object_id": null,
+      "reviewed_at": null,
+      "sensory_archetype_score": 0.93,
+      "cross_domain_reuse_score": 0.65,
+      "distinctiveness_score": 0.61,
+      "example_coverage_score": 0.65,
+      "phrase_cue_readiness_score": 0.65,
+      "negative_cue_readiness_score": 1.0,
+      "note_dictionary_risk": 0.13,
+      "overall_readiness_score": 0.72,
+      "similar_existing_objects": [
+        {
+          "existing_object_id": "dark_chocolate",
+          "similarity_reason": [
+            "related_existing_object",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.39
+        },
+        {
+          "existing_object_id": "honeycomb",
+          "similarity_reason": [
+            "related_existing_object",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.38
+        },
+        {
+          "existing_object_id": "warm_cotton",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.06
+        },
+        {
+          "existing_object_id": "wool_blanket",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.06
+        },
+        {
+          "existing_object_id": "film_grain",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.06
+        }
+      ]
+    },
+    {
+      "candidate_object_id": "stone_fruit_glow",
+      "korean_label": "복숭아와 살구 같은 금빛 과실감",
+      "label": "Stone Fruit Glow",
+      "source_domains": [
+        "wine",
+        "coffee"
+      ],
+      "family": "Fruit / Golden / Soft",
+      "review_status": "unreviewed",
+      "recommended_action": "ready_for_curated_merge",
+      "priority": "medium",
+      "reviewer_notes": "",
+      "promoted_to_object_id": null,
+      "reviewed_at": null,
+      "sensory_archetype_score": 0.93,
+      "cross_domain_reuse_score": 0.65,
+      "distinctiveness_score": 0.6,
+      "example_coverage_score": 0.65,
+      "phrase_cue_readiness_score": 0.65,
+      "negative_cue_readiness_score": 1.0,
+      "note_dictionary_risk": 0.13,
+      "overall_readiness_score": 0.72,
+      "similar_existing_objects": [
+        {
+          "existing_object_id": "vanilla_cream",
+          "similarity_reason": [
+            "related_existing_object",
+            "axis_overlap"
+          ],
+          "overlap_score": 0.4
+        },
+        {
+          "existing_object_id": "honeycomb",
+          "similarity_reason": [
+            "related_existing_object",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.38
+        },
+        {
+          "existing_object_id": "warm_cotton",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.06
+        },
+        {
+          "existing_object_id": "film_grain",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.06
+        },
+        {
+          "existing_object_id": "cashmere",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.05
+        }
+      ]
+    },
+    {
+      "candidate_object_id": "green_pepper_snap",
+      "korean_label": "피망처럼 아삭하게 꺾이는 초록감",
+      "label": "Green Pepper Snap",
+      "source_domains": [
+        "wine"
+      ],
+      "family": "Green / Crisp / Sharp",
+      "review_status": "unreviewed",
+      "recommended_action": "keep_as_candidate",
+      "priority": "medium",
+      "reviewer_notes": "",
+      "promoted_to_object_id": null,
+      "reviewed_at": null,
+      "sensory_archetype_score": 0.73,
+      "cross_domain_reuse_score": 0.35,
+      "distinctiveness_score": 0.62,
+      "example_coverage_score": 0.65,
+      "phrase_cue_readiness_score": 0.65,
+      "negative_cue_readiness_score": 1.0,
+      "note_dictionary_risk": 0.25,
+      "overall_readiness_score": 0.62,
+      "similar_existing_objects": [
+        {
+          "existing_object_id": "dry_herb",
+          "similarity_reason": [
+            "related_existing_object"
+          ],
+          "overlap_score": 0.38
+        },
+        {
+          "existing_object_id": "green_stem",
+          "similarity_reason": [
+            "related_existing_object"
+          ],
+          "overlap_score": 0.35
+        },
+        {
+          "existing_object_id": "cashmere",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "wool_blanket",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "film_grain",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.08
+        }
+      ]
+    },
+    {
+      "candidate_object_id": "wine_tannin_grip",
+      "korean_label": "와인 타닌의 입안을 조이는 떫은 질감",
+      "label": "Wine Tannin Grip",
+      "source_domains": [
+        "wine"
+      ],
+      "family": "Tannin / Dry / Grip",
+      "review_status": "unreviewed",
+      "recommended_action": "keep_as_candidate",
+      "priority": "medium",
+      "reviewer_notes": "",
+      "promoted_to_object_id": null,
+      "reviewed_at": null,
+      "sensory_archetype_score": 0.93,
+      "cross_domain_reuse_score": 0.35,
+      "distinctiveness_score": 0.59,
+      "example_coverage_score": 0.65,
+      "phrase_cue_readiness_score": 0.65,
+      "negative_cue_readiness_score": 1.0,
+      "note_dictionary_risk": 0.23,
+      "overall_readiness_score": 0.65,
+      "similar_existing_objects": [
+        {
+          "existing_object_id": "black_tea",
+          "similarity_reason": [
+            "related_existing_object",
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.41
+        },
+        {
+          "existing_object_id": "charred_oak",
+          "similarity_reason": [
+            "related_existing_object",
+            "axis_overlap"
+          ],
+          "overlap_score": 0.4
+        },
+        {
+          "existing_object_id": "cashmere",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "wool_blanket",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "film_grain",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.08
+        }
+      ]
+    },
+    {
+      "candidate_object_id": "wine_acidity_lift",
+      "korean_label": "와인 산미의 위로 들어 올리는 힘",
+      "label": "Wine Acidity Lift",
+      "source_domains": [
+        "wine",
+        "coffee"
+      ],
+      "family": "Acid / Lift / Cool",
+      "review_status": "unreviewed",
+      "recommended_action": "keep_as_candidate",
+      "priority": "medium",
+      "reviewer_notes": "",
+      "promoted_to_object_id": null,
+      "reviewed_at": null,
+      "sensory_archetype_score": 0.73,
+      "cross_domain_reuse_score": 0.65,
+      "distinctiveness_score": 0.65,
+      "example_coverage_score": 0.65,
+      "phrase_cue_readiness_score": 0.65,
+      "negative_cue_readiness_score": 1.0,
+      "note_dictionary_risk": 0.33,
+      "overall_readiness_score": 0.66,
+      "similar_existing_objects": [
+        {
+          "existing_object_id": "mountain_stream",
+          "similarity_reason": [
+            "related_existing_object"
+          ],
+          "overlap_score": 0.35
+        },
+        {
+          "existing_object_id": "citrus_peel",
+          "similarity_reason": [
+            "related_existing_object"
+          ],
+          "overlap_score": 0.35
+        },
+        {
+          "existing_object_id": "cashmere",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "wool_blanket",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "film_grain",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.08
+        }
+      ]
+    },
+    {
+      "candidate_object_id": "coffee_roasted_nut",
+      "korean_label": "커피 로스팅의 따뜻한 견과감",
+      "label": "Coffee Roasted Nut",
+      "source_domains": [
+        "coffee",
+        "whisky"
+      ],
+      "family": "Roasted / Nutty / Warm",
+      "review_status": "unreviewed",
+      "recommended_action": "keep_as_candidate",
+      "priority": "medium",
+      "reviewer_notes": "",
+      "promoted_to_object_id": null,
+      "reviewed_at": null,
+      "sensory_archetype_score": 0.73,
+      "cross_domain_reuse_score": 0.65,
+      "distinctiveness_score": 0.59,
+      "example_coverage_score": 0.65,
+      "phrase_cue_readiness_score": 0.65,
+      "negative_cue_readiness_score": 1.0,
+      "note_dictionary_risk": 0.33,
+      "overall_readiness_score": 0.65,
+      "similar_existing_objects": [
+        {
+          "existing_object_id": "roasted_almond",
+          "similarity_reason": [
+            "related_existing_object",
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.41
+        },
+        {
+          "existing_object_id": "butter_toast",
+          "similarity_reason": [
+            "related_existing_object",
+            "axis_overlap"
+          ],
+          "overlap_score": 0.4
+        },
+        {
+          "existing_object_id": "cashmere",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "wool_blanket",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "film_grain",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.08
+        }
+      ]
+    },
+    {
+      "candidate_object_id": "coffee_cocoa_depth",
+      "korean_label": "커피 코코아의 어둡고 마른 깊이",
+      "label": "Coffee Cocoa Depth",
+      "source_domains": [
+        "coffee"
+      ],
+      "family": "Cocoa / Dark / Dry",
+      "review_status": "unreviewed",
+      "recommended_action": "keep_as_candidate",
+      "priority": "medium",
+      "reviewer_notes": "",
+      "promoted_to_object_id": null,
+      "reviewed_at": null,
+      "sensory_archetype_score": 0.93,
+      "cross_domain_reuse_score": 0.35,
+      "distinctiveness_score": 0.59,
+      "example_coverage_score": 0.65,
+      "phrase_cue_readiness_score": 0.65,
+      "negative_cue_readiness_score": 1.0,
+      "note_dictionary_risk": 0.23,
+      "overall_readiness_score": 0.65,
+      "similar_existing_objects": [
+        {
+          "existing_object_id": "dark_chocolate",
+          "similarity_reason": [
+            "related_existing_object",
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.41
+        },
+        {
+          "existing_object_id": "cashmere",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "wool_blanket",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "film_grain",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "warm_cotton",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.06
+        }
+      ]
+    },
+    {
+      "candidate_object_id": "coffee_berry_acidity",
+      "korean_label": "커피 베리 산미의 붉은 상승감",
+      "label": "Coffee Berry Acidity",
+      "source_domains": [
+        "coffee"
+      ],
+      "family": "Berry / Acid / Juicy",
+      "review_status": "unreviewed",
+      "recommended_action": "keep_as_candidate",
+      "priority": "medium",
+      "reviewer_notes": "",
+      "promoted_to_object_id": null,
+      "reviewed_at": null,
+      "sensory_archetype_score": 0.73,
+      "cross_domain_reuse_score": 0.35,
+      "distinctiveness_score": 0.62,
+      "example_coverage_score": 0.65,
+      "phrase_cue_readiness_score": 0.65,
+      "negative_cue_readiness_score": 1.0,
+      "note_dictionary_risk": 0.43,
+      "overall_readiness_score": 0.59,
+      "similar_existing_objects": [
+        {
+          "existing_object_id": "honeycomb",
+          "similarity_reason": [
+            "related_existing_object",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.38
+        },
+        {
+          "existing_object_id": "citrus_peel",
+          "similarity_reason": [
+            "related_existing_object"
+          ],
+          "overlap_score": 0.35
+        },
+        {
+          "existing_object_id": "cashmere",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "wool_blanket",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "film_grain",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.08
+        }
+      ]
+    },
+    {
+      "candidate_object_id": "coffee_fermented_winey",
+      "korean_label": "발효된 과실처럼 와이니한 커피감",
+      "label": "Coffee Fermented Winey",
+      "source_domains": [
+        "coffee"
+      ],
+      "family": "Fermented / Fruit / Complex",
+      "review_status": "unreviewed",
+      "recommended_action": "keep_as_candidate",
+      "priority": "medium",
+      "reviewer_notes": "",
+      "promoted_to_object_id": null,
+      "reviewed_at": null,
+      "sensory_archetype_score": 0.73,
+      "cross_domain_reuse_score": 0.35,
+      "distinctiveness_score": 0.62,
+      "example_coverage_score": 0.65,
+      "phrase_cue_readiness_score": 0.65,
+      "negative_cue_readiness_score": 1.0,
+      "note_dictionary_risk": 0.43,
+      "overall_readiness_score": 0.59,
+      "similar_existing_objects": [
+        {
+          "existing_object_id": "honeycomb",
+          "similarity_reason": [
+            "related_existing_object",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.38
+        },
+        {
+          "existing_object_id": "black_tea",
+          "similarity_reason": [
+            "related_existing_object",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.38
+        },
+        {
+          "existing_object_id": "warm_cotton",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.06
+        },
+        {
+          "existing_object_id": "film_grain",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.06
+        },
+        {
+          "existing_object_id": "cashmere",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.05
+        }
+      ]
+    },
+    {
+      "candidate_object_id": "tea_like_clarity",
+      "korean_label": "차처럼 맑고 건조한 투명감",
+      "label": "Tea-like Clarity",
+      "source_domains": [
+        "coffee",
+        "fragrance",
+        "cross_domain"
+      ],
+      "family": "Tea / Clarity / Dry",
+      "review_status": "unreviewed",
+      "recommended_action": "ready_for_curated_merge",
+      "priority": "medium",
+      "reviewer_notes": "",
+      "promoted_to_object_id": null,
+      "reviewed_at": null,
+      "sensory_archetype_score": 0.93,
+      "cross_domain_reuse_score": 1.0,
+      "distinctiveness_score": 0.59,
+      "example_coverage_score": 0.65,
+      "phrase_cue_readiness_score": 0.65,
+      "negative_cue_readiness_score": 1.0,
+      "note_dictionary_risk": 0.0,
+      "overall_readiness_score": 0.8,
+      "similar_existing_objects": [
+        {
+          "existing_object_id": "black_tea",
+          "similarity_reason": [
+            "related_existing_object",
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.41
+        },
+        {
+          "existing_object_id": "dry_herb",
+          "similarity_reason": [
+            "related_existing_object"
+          ],
+          "overlap_score": 0.38
+        },
+        {
+          "existing_object_id": "cashmere",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "wool_blanket",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "film_grain",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.08
+        }
+      ]
+    },
+    {
+      "candidate_object_id": "syrupy_body",
+      "korean_label": "시럽처럼 두껍게 차오르는 바디",
+      "label": "Syrupy Body",
+      "source_domains": [
+        "wine",
+        "coffee",
+        "cross_domain"
+      ],
+      "family": "Body / Syrup / Thick",
+      "review_status": "unreviewed",
+      "recommended_action": "ready_for_curated_merge",
+      "priority": "medium",
+      "reviewer_notes": "",
+      "promoted_to_object_id": null,
+      "reviewed_at": null,
+      "sensory_archetype_score": 0.93,
+      "cross_domain_reuse_score": 1.0,
+      "distinctiveness_score": 0.62,
+      "example_coverage_score": 0.65,
+      "phrase_cue_readiness_score": 0.65,
+      "negative_cue_readiness_score": 1.0,
+      "note_dictionary_risk": 0.0,
+      "overall_readiness_score": 0.81,
+      "similar_existing_objects": [
+        {
+          "existing_object_id": "burnt_sugar",
+          "similarity_reason": [
+            "related_existing_object"
+          ],
+          "overlap_score": 0.38
+        },
+        {
+          "existing_object_id": "honeycomb",
+          "similarity_reason": [
+            "related_existing_object",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.38
+        },
+        {
+          "existing_object_id": "cashmere",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "wool_blanket",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "film_grain",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.08
+        }
+      ]
+    },
+    {
+      "candidate_object_id": "clean_finish",
+      "korean_label": "깨끗하게 떨어지는 마무리",
+      "label": "Clean Finish",
+      "source_domains": [
+        "coffee",
+        "wine",
+        "cross_domain"
+      ],
+      "family": "Finish / Clean / Clear",
+      "review_status": "unreviewed",
+      "recommended_action": "needs_distinction_review",
+      "priority": "medium",
+      "reviewer_notes": "",
+      "promoted_to_object_id": null,
+      "reviewed_at": null,
+      "sensory_archetype_score": 0.93,
+      "cross_domain_reuse_score": 1.0,
+      "distinctiveness_score": 0.54,
+      "example_coverage_score": 0.65,
+      "phrase_cue_readiness_score": 0.65,
+      "negative_cue_readiness_score": 1.0,
+      "note_dictionary_risk": 0.0,
+      "overall_readiness_score": 0.79,
+      "similar_existing_objects": [
+        {
+          "existing_object_id": "fresh_linen",
+          "similarity_reason": [
+            "related_existing_object",
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.46
+        },
+        {
+          "existing_object_id": "clean_room",
+          "similarity_reason": [
+            "related_existing_object",
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.46
+        },
+        {
+          "existing_object_id": "warm_cotton",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "after_rain_garden",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "green_stem",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.07
+        }
+      ]
+    },
+    {
+      "candidate_object_id": "astringent_dryness",
+      "korean_label": "혀를 조이는 수렴성 드라이함",
+      "label": "Astringent Dryness",
+      "source_domains": [
+        "coffee",
+        "wine",
+        "cross_domain"
+      ],
+      "family": "Astringent / Dry / Grip",
+      "review_status": "unreviewed",
+      "recommended_action": "ready_for_curated_merge",
+      "priority": "medium",
+      "reviewer_notes": "",
+      "promoted_to_object_id": null,
+      "reviewed_at": null,
+      "sensory_archetype_score": 0.73,
+      "cross_domain_reuse_score": 1.0,
+      "distinctiveness_score": 0.59,
+      "example_coverage_score": 0.65,
+      "phrase_cue_readiness_score": 0.65,
+      "negative_cue_readiness_score": 1.0,
+      "note_dictionary_risk": 0.15,
+      "overall_readiness_score": 0.74,
+      "similar_existing_objects": [
+        {
+          "existing_object_id": "black_tea",
+          "similarity_reason": [
+            "related_existing_object",
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.41
+        },
+        {
+          "existing_object_id": "charred_oak",
+          "similarity_reason": [
+            "related_existing_object",
+            "axis_overlap"
+          ],
+          "overlap_score": 0.4
+        },
+        {
+          "existing_object_id": "cashmere",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "wool_blanket",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "film_grain",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.08
+        }
+      ]
+    },
+    {
+      "candidate_object_id": "mineral_spark",
+      "korean_label": "차가운 광물성의 선명한 긴장감",
+      "label": "Mineral Spark",
+      "source_domains": [
+        "wine",
+        "fragrance",
+        "cross_domain"
+      ],
+      "family": "Mineral / Cool / Clear",
+      "review_status": "unreviewed",
+      "recommended_action": "needs_distinction_review",
+      "priority": "medium",
+      "reviewer_notes": "",
+      "promoted_to_object_id": null,
+      "reviewed_at": null,
+      "sensory_archetype_score": 0.93,
+      "cross_domain_reuse_score": 1.0,
+      "distinctiveness_score": 0.48,
+      "example_coverage_score": 0.65,
+      "phrase_cue_readiness_score": 0.65,
+      "negative_cue_readiness_score": 1.0,
+      "note_dictionary_risk": 0.0,
+      "overall_readiness_score": 0.79,
+      "similar_existing_objects": [
+        {
+          "existing_object_id": "wet_stone",
+          "similarity_reason": [
+            "related_existing_object",
+            "family_overlap",
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.52
+        },
+        {
+          "existing_object_id": "slate",
+          "similarity_reason": [
+            "related_existing_object",
+            "family_overlap",
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.49
+        },
+        {
+          "existing_object_id": "crystal",
+          "similarity_reason": [
+            "related_existing_object",
+            "family_overlap"
+          ],
+          "overlap_score": 0.46
+        },
+        {
+          "existing_object_id": "granite",
+          "similarity_reason": [
+            "family_overlap",
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.14
+        },
+        {
+          "existing_object_id": "marble",
+          "similarity_reason": [
+            "family_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.12
+        }
+      ]
+    },
+    {
+      "candidate_object_id": "wet_soil",
+      "korean_label": "비 맞은 흙의 낮고 축축한 냄새",
+      "label": "Wet Soil",
+      "source_domains": [
+        "fragrance",
+        "wine",
+        "coffee",
+        "cross_domain"
+      ],
+      "family": "Earth / Rain / Moist",
+      "review_status": "unreviewed",
+      "recommended_action": "ready_for_curated_merge",
+      "priority": "medium",
+      "reviewer_notes": "",
+      "promoted_to_object_id": null,
+      "reviewed_at": null,
+      "sensory_archetype_score": 0.73,
+      "cross_domain_reuse_score": 1.0,
+      "distinctiveness_score": 0.61,
+      "example_coverage_score": 0.65,
+      "phrase_cue_readiness_score": 0.65,
+      "negative_cue_readiness_score": 1.0,
+      "note_dictionary_risk": 0.15,
+      "overall_readiness_score": 0.75,
+      "similar_existing_objects": [
+        {
+          "existing_object_id": "after_rain_garden",
+          "similarity_reason": [
+            "related_existing_object",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.39
+        },
+        {
+          "existing_object_id": "forest_floor",
+          "similarity_reason": [
+            "related_existing_object",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.36
+        },
+        {
+          "existing_object_id": "cashmere",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "wool_blanket",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "film_grain",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.08
+        }
+      ]
+    },
+    {
+      "candidate_object_id": "soap_clean",
+      "korean_label": "비누처럼 하얗고 미끄러운 청결감",
+      "label": "Soap Clean",
+      "source_domains": [
+        "fragrance",
+        "cross_domain"
+      ],
+      "family": "Soap / Clean / White",
+      "review_status": "unreviewed",
+      "recommended_action": "needs_distinction_review",
+      "priority": "medium",
+      "reviewer_notes": "",
+      "promoted_to_object_id": null,
+      "reviewed_at": null,
+      "sensory_archetype_score": 0.93,
+      "cross_domain_reuse_score": 0.65,
+      "distinctiveness_score": 0.54,
+      "example_coverage_score": 0.65,
+      "phrase_cue_readiness_score": 0.65,
+      "negative_cue_readiness_score": 1.0,
+      "note_dictionary_risk": 0.0,
+      "overall_readiness_score": 0.74,
+      "similar_existing_objects": [
+        {
+          "existing_object_id": "fresh_linen",
+          "similarity_reason": [
+            "related_existing_object",
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.46
+        },
+        {
+          "existing_object_id": "clean_room",
+          "similarity_reason": [
+            "related_existing_object",
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.46
+        },
+        {
+          "existing_object_id": "warm_cotton",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "after_rain_garden",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "green_stem",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.07
+        }
+      ]
+    },
+    {
+      "candidate_object_id": "laundry_musk",
+      "korean_label": "막 마른 세탁물의 보송한 머스크",
+      "label": "Laundry Musk",
+      "source_domains": [
+        "fragrance",
+        "cross_domain"
+      ],
+      "family": "Laundry / Musk / Clean",
+      "review_status": "unreviewed",
+      "recommended_action": "needs_distinction_review",
+      "priority": "medium",
+      "reviewer_notes": "",
+      "promoted_to_object_id": null,
+      "reviewed_at": null,
+      "sensory_archetype_score": 0.93,
+      "cross_domain_reuse_score": 0.65,
+      "distinctiveness_score": 0.54,
+      "example_coverage_score": 0.65,
+      "phrase_cue_readiness_score": 0.65,
+      "negative_cue_readiness_score": 1.0,
+      "note_dictionary_risk": 0.13,
+      "overall_readiness_score": 0.71,
+      "similar_existing_objects": [
+        {
+          "existing_object_id": "fresh_linen",
+          "similarity_reason": [
+            "related_existing_object",
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.46
+        },
+        {
+          "existing_object_id": "clean_room",
+          "similarity_reason": [
+            "related_existing_object",
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.46
+        },
+        {
+          "existing_object_id": "warm_cotton",
+          "similarity_reason": [
+            "related_existing_object",
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.44
+        },
+        {
+          "existing_object_id": "after_rain_garden",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "green_stem",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.07
+        }
+      ]
+    },
+    {
+      "candidate_object_id": "cosmetic_powder",
+      "korean_label": "화장품 파우더의 매트한 잔향",
+      "label": "Cosmetic Powder",
+      "source_domains": [
+        "fragrance",
+        "cross_domain"
+      ],
+      "family": "Cosmetic / Powdery / Matte",
+      "review_status": "unreviewed",
+      "recommended_action": "ready_for_curated_merge",
+      "priority": "medium",
+      "reviewer_notes": "",
+      "promoted_to_object_id": null,
+      "reviewed_at": null,
+      "sensory_archetype_score": 0.93,
+      "cross_domain_reuse_score": 0.65,
+      "distinctiveness_score": 0.6,
+      "example_coverage_score": 0.65,
+      "phrase_cue_readiness_score": 0.65,
+      "negative_cue_readiness_score": 1.0,
+      "note_dictionary_risk": 0.0,
+      "overall_readiness_score": 0.75,
+      "similar_existing_objects": [
+        {
+          "existing_object_id": "velvet",
+          "similarity_reason": [
+            "related_existing_object",
+            "axis_overlap"
+          ],
+          "overlap_score": 0.4
+        },
+        {
+          "existing_object_id": "dry_herb",
+          "similarity_reason": [
+            "related_existing_object",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.38
+        },
+        {
+          "existing_object_id": "cashmere",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "wool_blanket",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "film_grain",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.08
+        }
+      ]
+    },
+    {
+      "candidate_object_id": "cold_glass",
+      "korean_label": "차가운 유리의 투명한 표면감",
+      "label": "Cold Glass",
+      "source_domains": [
+        "cross_domain"
+      ],
+      "family": "Glass / Cold / Clear",
+      "review_status": "unreviewed",
+      "recommended_action": "keep_as_candidate",
+      "priority": "medium",
+      "reviewer_notes": "",
+      "promoted_to_object_id": null,
+      "reviewed_at": null,
+      "sensory_archetype_score": 0.93,
+      "cross_domain_reuse_score": 0.35,
+      "distinctiveness_score": 0.63,
+      "example_coverage_score": 0.65,
+      "phrase_cue_readiness_score": 0.65,
+      "negative_cue_readiness_score": 1.0,
+      "note_dictionary_risk": 0.05,
+      "overall_readiness_score": 0.69,
+      "similar_existing_objects": [
+        {
+          "existing_object_id": "cold_metal",
+          "similarity_reason": [
+            "related_existing_object",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.37
+        },
+        {
+          "existing_object_id": "crystal",
+          "similarity_reason": [
+            "related_existing_object",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.36
+        },
+        {
+          "existing_object_id": "silver_spoon",
+          "similarity_reason": [
+            "related_existing_object",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.36
+        },
+        {
+          "existing_object_id": "cashmere",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "wool_blanket",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.08
+        }
+      ]
+    },
+    {
+      "candidate_object_id": "warm_resin",
+      "korean_label": "따뜻한 수지의 끈적한 잔향",
+      "label": "Warm Resin",
+      "source_domains": [
+        "fragrance",
+        "cross_domain"
+      ],
+      "family": "Resin / Warm / Sticky",
+      "review_status": "unreviewed",
+      "recommended_action": "keep_as_candidate",
+      "priority": "medium",
+      "reviewer_notes": "",
+      "promoted_to_object_id": null,
+      "reviewed_at": null,
+      "sensory_archetype_score": 0.73,
+      "cross_domain_reuse_score": 0.65,
+      "distinctiveness_score": 0.61,
+      "example_coverage_score": 0.65,
+      "phrase_cue_readiness_score": 0.65,
+      "negative_cue_readiness_score": 1.0,
+      "note_dictionary_risk": 0.15,
+      "overall_readiness_score": 0.69,
+      "similar_existing_objects": [
+        {
+          "existing_object_id": "pine_resin",
+          "similarity_reason": [
+            "related_existing_object",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.39
+        },
+        {
+          "existing_object_id": "honeycomb",
+          "similarity_reason": [
+            "related_existing_object",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.38
+        },
+        {
+          "existing_object_id": "cashmere",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "wool_blanket",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "film_grain",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.08
+        }
+      ]
+    },
+    {
+      "candidate_object_id": "golden_density",
+      "korean_label": "금빛으로 두껍게 남는 달콤한 밀도",
+      "label": "Golden Density",
+      "source_domains": [
+        "fragrance",
+        "whisky",
+        "coffee",
+        "cross_domain"
+      ],
+      "family": "Golden / Sweet / Dense",
+      "review_status": "unreviewed",
+      "recommended_action": "ready_for_curated_merge",
+      "priority": "medium",
+      "reviewer_notes": "",
+      "promoted_to_object_id": null,
+      "reviewed_at": null,
+      "sensory_archetype_score": 0.93,
+      "cross_domain_reuse_score": 1.0,
+      "distinctiveness_score": 0.6,
+      "example_coverage_score": 0.65,
+      "phrase_cue_readiness_score": 0.65,
+      "negative_cue_readiness_score": 1.0,
+      "note_dictionary_risk": 0.0,
+      "overall_readiness_score": 0.81,
+      "similar_existing_objects": [
+        {
+          "existing_object_id": "vanilla_cream",
+          "similarity_reason": [
+            "related_existing_object",
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.4
+        },
+        {
+          "existing_object_id": "honeycomb",
+          "similarity_reason": [
+            "related_existing_object",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.39
+        },
+        {
+          "existing_object_id": "burnt_sugar",
+          "similarity_reason": [
+            "related_existing_object",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.38
+        },
+        {
+          "existing_object_id": "cashmere",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "wool_blanket",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.08
+        }
+      ]
+    },
+    {
+      "candidate_object_id": "dark_resin",
+      "korean_label": "어둡고 낮게 깔리는 수지감",
+      "label": "Dark Resin",
+      "source_domains": [
+        "fragrance",
+        "cross_domain"
+      ],
+      "family": "Dark / Resin / Earth",
+      "review_status": "unreviewed",
+      "recommended_action": "ready_for_curated_merge",
+      "priority": "medium",
+      "reviewer_notes": "",
+      "promoted_to_object_id": null,
+      "reviewed_at": null,
+      "sensory_archetype_score": 0.93,
+      "cross_domain_reuse_score": 0.65,
+      "distinctiveness_score": 0.59,
+      "example_coverage_score": 0.65,
+      "phrase_cue_readiness_score": 0.65,
+      "negative_cue_readiness_score": 1.0,
+      "note_dictionary_risk": 0.0,
+      "overall_readiness_score": 0.74,
+      "similar_existing_objects": [
+        {
+          "existing_object_id": "tobacco_leaf",
+          "similarity_reason": [
+            "related_existing_object",
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.41
+        },
+        {
+          "existing_object_id": "charred_oak",
+          "similarity_reason": [
+            "related_existing_object",
+            "axis_overlap"
+          ],
+          "overlap_score": 0.4
+        },
+        {
+          "existing_object_id": "forest_floor",
+          "similarity_reason": [
+            "related_existing_object",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.36
+        },
+        {
+          "existing_object_id": "cashmere",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "wool_blanket",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        }
+      ]
+    },
+    {
+      "candidate_object_id": "dry_spice",
+      "korean_label": "마른 향신료의 따뜻하고 날카로운 잔향",
+      "label": "Dry Spice",
+      "source_domains": [
+        "whisky",
+        "wine",
+        "coffee",
+        "cross_domain"
+      ],
+      "family": "Spice / Dry / Warm",
+      "review_status": "unreviewed",
+      "recommended_action": "keep_as_candidate",
+      "priority": "medium",
+      "reviewer_notes": "",
+      "promoted_to_object_id": null,
+      "reviewed_at": null,
+      "sensory_archetype_score": 0.73,
+      "cross_domain_reuse_score": 1.0,
+      "distinctiveness_score": 0.57,
+      "example_coverage_score": 0.65,
+      "phrase_cue_readiness_score": 0.65,
+      "negative_cue_readiness_score": 1.0,
+      "note_dictionary_risk": 0.33,
+      "overall_readiness_score": 0.71,
+      "similar_existing_objects": [
+        {
+          "existing_object_id": "charred_oak",
+          "similarity_reason": [
+            "related_existing_object",
+            "axis_overlap"
+          ],
+          "overlap_score": 0.43
+        },
+        {
+          "existing_object_id": "dry_herb",
+          "similarity_reason": [
+            "related_existing_object",
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.41
+        },
+        {
+          "existing_object_id": "burnt_sugar",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "dark_chocolate",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "tobacco_leaf",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.08
+        }
+      ]
+    },
+    {
+      "candidate_object_id": "sweet_spice",
+      "korean_label": "달큰하고 따뜻한 스파이스",
+      "label": "Sweet Spice",
+      "source_domains": [
+        "fragrance",
+        "whisky",
+        "coffee"
+      ],
+      "family": "Spice / Sweet / Warm",
+      "review_status": "unreviewed",
+      "recommended_action": "keep_as_candidate",
+      "priority": "medium",
+      "reviewer_notes": "",
+      "promoted_to_object_id": null,
+      "reviewed_at": null,
+      "sensory_archetype_score": 0.73,
+      "cross_domain_reuse_score": 1.0,
+      "distinctiveness_score": 0.57,
+      "example_coverage_score": 0.65,
+      "phrase_cue_readiness_score": 0.65,
+      "negative_cue_readiness_score": 1.0,
+      "note_dictionary_risk": 0.33,
+      "overall_readiness_score": 0.71,
+      "similar_existing_objects": [
+        {
+          "existing_object_id": "burnt_sugar",
+          "similarity_reason": [
+            "related_existing_object",
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.43
+        },
+        {
+          "existing_object_id": "vanilla_cream",
+          "similarity_reason": [
+            "related_existing_object",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.38
+        },
+        {
+          "existing_object_id": "dark_chocolate",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "tobacco_leaf",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "charred_oak",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        }
+      ]
+    },
+    {
+      "candidate_object_id": "herbal_bitterness",
+      "korean_label": "마른 허브의 식물성 쌉싸름함",
+      "label": "Herbal Bitterness",
+      "source_domains": [
+        "wine",
+        "coffee",
+        "cross_domain"
+      ],
+      "family": "Herbal / Bitter / Dry",
+      "review_status": "unreviewed",
+      "recommended_action": "keep_as_candidate",
+      "priority": "medium",
+      "reviewer_notes": "",
+      "promoted_to_object_id": null,
+      "reviewed_at": null,
+      "sensory_archetype_score": 0.73,
+      "cross_domain_reuse_score": 1.0,
+      "distinctiveness_score": 0.59,
+      "example_coverage_score": 0.65,
+      "phrase_cue_readiness_score": 0.65,
+      "negative_cue_readiness_score": 1.0,
+      "note_dictionary_risk": 0.33,
+      "overall_readiness_score": 0.71,
+      "similar_existing_objects": [
+        {
+          "existing_object_id": "black_tea",
+          "similarity_reason": [
+            "related_existing_object",
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.41
+        },
+        {
+          "existing_object_id": "dry_herb",
+          "similarity_reason": [
+            "related_existing_object",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.39
+        },
+        {
+          "existing_object_id": "cashmere",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "wool_blanket",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "film_grain",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.08
+        }
+      ]
+    },
+    {
+      "candidate_object_id": "green_leaf_crush",
+      "korean_label": "잎을 으깼을 때 나는 아삭한 초록감",
+      "label": "Green Leaf Crush",
+      "source_domains": [
+        "fragrance",
+        "wine",
+        "coffee",
+        "cross_domain"
+      ],
+      "family": "Green / Leaf / Crisp",
+      "review_status": "unreviewed",
+      "recommended_action": "ready_for_curated_merge",
+      "priority": "medium",
+      "reviewer_notes": "",
+      "promoted_to_object_id": null,
+      "reviewed_at": null,
+      "sensory_archetype_score": 0.73,
+      "cross_domain_reuse_score": 1.0,
+      "distinctiveness_score": 0.62,
+      "example_coverage_score": 0.65,
+      "phrase_cue_readiness_score": 0.65,
+      "negative_cue_readiness_score": 1.0,
+      "note_dictionary_risk": 0.15,
+      "overall_readiness_score": 0.75,
+      "similar_existing_objects": [
+        {
+          "existing_object_id": "wet_moss",
+          "similarity_reason": [
+            "related_existing_object"
+          ],
+          "overlap_score": 0.38
+        },
+        {
+          "existing_object_id": "green_stem",
+          "similarity_reason": [
+            "related_existing_object"
+          ],
+          "overlap_score": 0.35
+        },
+        {
+          "existing_object_id": "cashmere",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "wool_blanket",
+          "similarity_reason": [
+            "axis_overlap"
+          ],
+          "overlap_score": 0.08
+        },
+        {
+          "existing_object_id": "film_grain",
+          "similarity_reason": [
+            "axis_overlap",
+            "keyword_overlap"
+          ],
+          "overlap_score": 0.08
+        }
+      ]
+    }
+  ]
+}

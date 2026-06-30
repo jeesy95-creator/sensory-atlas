@@ -2,10 +2,15 @@ from sensory_atlas.loaders import load_sensory_objects
 from sensory_atlas.parser import parse_sentence
 from sensory_atlas.ui_helpers import (
     axis_evidence_to_dataframe,
+    candidate_detail_for_display,
+    candidate_review_rows_to_dataframe,
     evaluate_all_datasets,
     format_axis_confidence,
     format_axis_value,
+    format_readiness_score,
+    get_candidate_lookup,
     get_object_lookup,
+    load_candidate_review_for_ui,
     objects_to_dataframe,
     parser_output_to_display_dict,
 )
@@ -31,6 +36,11 @@ def test_format_axis_confidence_handles_empty_and_float_values() -> None:
     assert format_axis_confidence(0.756) == "0.76"
 
 
+def test_format_readiness_score_handles_empty_and_float_values() -> None:
+    assert format_readiness_score(None) == ""
+    assert format_readiness_score(0.812) == "0.81"
+
+
 def test_parser_output_to_display_dict_contains_anchor_and_axes() -> None:
     objects = load_sensory_objects()
     lookup = get_object_lookup(objects)
@@ -53,6 +63,20 @@ def test_axis_evidence_to_dataframe_contains_display_columns() -> None:
     assert not df.empty
     for column in ("axis", "inferred_value", "evidence", "axis_confidence"):
         assert column in df.columns
+
+
+def test_candidate_review_helpers_return_display_data() -> None:
+    review = load_candidate_review_for_ui()
+    df = candidate_review_rows_to_dataframe(review["rows"])
+    lookup = get_candidate_lookup(review["candidates"])
+    first_id = review["rows"][0]["candidate_object_id"]
+    detail = candidate_detail_for_display(lookup[first_id], review["existing_objects"])
+
+    assert not df.empty
+    assert "candidate_object_id" in df.columns
+    assert first_id in lookup
+    assert "promotion_draft" in detail
+    assert "similar_existing_objects" in detail
 
 
 def test_evaluate_all_datasets_returns_reports() -> None:
