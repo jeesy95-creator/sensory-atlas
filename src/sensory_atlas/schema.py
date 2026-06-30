@@ -78,6 +78,9 @@ class ParserOutput(BaseModel):
     anchor_object: DetectedObject | None = None
     activated_cue_groups: list[ActivatedCueGroup] = Field(default_factory=list)
     axes: CoreAxes
+    axis_evidence: dict[str, list[str]] = Field(default_factory=dict)
+    axis_confidence: dict[str, float] = Field(default_factory=dict)
+    clarification_questions: list[str] = Field(default_factory=list)
     interpretation_summary: str
     confidence: float = Field(ge=0.0, le=1.0)
     low_confidence: bool = False

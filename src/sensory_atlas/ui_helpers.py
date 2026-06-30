@@ -17,6 +17,18 @@ DATASETS = {
     "blind": "blind_test_sentences_30.jsonl",
     "holdout": "holdout_test_sentences_50.jsonl",
 }
+AXIS_LABELS = {
+    "material": "Material",
+    "temperature": "Temperature",
+    "texture": "Texture",
+    "light": "Light",
+    "motion": "Motion",
+    "time": "Time",
+    "atmosphere": "Atmosphere",
+    "density": "Density",
+    "rendering": "Rendering",
+    "organic_mineral": "Organic/Mineral",
+}
 
 
 def load_objects_for_ui(path: str | Path | None = None) -> list[SensoryObject]:
@@ -52,6 +64,38 @@ def format_axis_value(value: str | list[str] | None) -> str:
     if isinstance(value, list):
         return ", ".join(str(item) for item in value if item is not None)
     return str(value)
+
+
+def format_axis_confidence(value: float | None) -> str:
+    if value is None:
+        return ""
+    return f"{value:.2f}"
+
+
+def axis_evidence_to_dataframe(output: ParserOutput) -> pd.DataFrame:
+    axes_payload = output.axes.model_dump()
+    axis_keys = sorted(
+        set(axes_payload)
+        | set(output.axis_evidence)
+        | set(output.axis_confidence),
+        key=lambda item: (item not in AXIS_LABELS, item),
+    )
+    rows = []
+    for axis in axis_keys:
+        inferred_value = format_axis_value(axes_payload.get(axis))
+        evidence = format_axis_value(output.axis_evidence.get(axis, []))
+        confidence = format_axis_confidence(output.axis_confidence.get(axis))
+        if not inferred_value and not evidence and not confidence:
+            continue
+        rows.append(
+            {
+                "axis": AXIS_LABELS.get(axis, axis),
+                "inferred_value": inferred_value,
+                "evidence": evidence,
+                "axis_confidence": confidence,
+            }
+        )
+    return pd.DataFrame(rows)
 
 
 def _object_display_row(object_id: str, score: float | None, rank: int | None, lookup: dict[str, SensoryObject]) -> dict[str, Any]:
@@ -112,6 +156,10 @@ def parser_output_to_display_dict(
         "anchor": anchor,
         "detected_objects": detected_rows,
         "axes": axes,
+        "axis_evidence": output.axis_evidence,
+        "axis_confidence": output.axis_confidence,
+        "axis_evidence_table": axis_evidence_to_dataframe(output),
+        "clarification_questions": output.clarification_questions,
         "activated_cue_groups": cue_groups,
         "confidence": output.confidence,
         "low_confidence": output.low_confidence,

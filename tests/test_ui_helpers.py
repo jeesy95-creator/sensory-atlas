@@ -1,7 +1,9 @@
 from sensory_atlas.loaders import load_sensory_objects
 from sensory_atlas.parser import parse_sentence
 from sensory_atlas.ui_helpers import (
+    axis_evidence_to_dataframe,
     evaluate_all_datasets,
+    format_axis_confidence,
     format_axis_value,
     get_object_lookup,
     objects_to_dataframe,
@@ -24,6 +26,11 @@ def test_format_axis_value_handles_draft_values() -> None:
     assert format_axis_value(None) == ""
 
 
+def test_format_axis_confidence_handles_empty_and_float_values() -> None:
+    assert format_axis_confidence(None) == ""
+    assert format_axis_confidence(0.756) == "0.76"
+
+
 def test_parser_output_to_display_dict_contains_anchor_and_axes() -> None:
     objects = load_sensory_objects()
     lookup = get_object_lookup(objects)
@@ -33,7 +40,19 @@ def test_parser_output_to_display_dict_contains_anchor_and_axes() -> None:
 
     assert display["anchor"]
     assert display["axes"]
+    assert "axis_evidence_table" in display
+    assert "clarification_questions" in display
     assert "Rendering" in display["axes"]
+
+
+def test_axis_evidence_to_dataframe_contains_display_columns() -> None:
+    objects = load_sensory_objects()
+    output = parse_sentence("비 온 뒤 숲 바닥처럼 축축하고 초록빛이 도는 향", objects)
+    df = axis_evidence_to_dataframe(output)
+
+    assert not df.empty
+    for column in ("axis", "inferred_value", "evidence", "axis_confidence"):
+        assert column in df.columns
 
 
 def test_evaluate_all_datasets_returns_reports() -> None:

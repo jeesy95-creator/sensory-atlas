@@ -85,6 +85,12 @@ def render_parse_demo(objects, object_lookup) -> None:
         st.markdown("### Sensory Axes")
         render_axes(display["axes"])
 
+        st.markdown("### Axis Evidence")
+        if not display["axis_evidence_table"].empty:
+            st.dataframe(display["axis_evidence_table"], hide_index=True, use_container_width=True)
+        else:
+            st.caption("No axis-level evidence detected.")
+
         st.markdown("### Activated Cue Groups")
         if display["activated_cue_groups"]:
             st.dataframe(pd.DataFrame(display["activated_cue_groups"]), hide_index=True, use_container_width=True)
@@ -97,6 +103,13 @@ def render_parse_demo(objects, object_lookup) -> None:
         col2.metric("low_confidence", str(display["low_confidence"]))
         if display["low_confidence"]:
             st.warning("해석 신뢰도가 낮습니다. 사용자 확인 또는 추가 표현이 필요합니다.")
+
+        if display["clarification_questions"]:
+            st.markdown("### 더 정확한 해석을 위한 질문")
+            for question in display["clarification_questions"]:
+                st.info(question)
+        else:
+            st.caption("현재 입력은 충분히 명확하게 해석되었습니다.")
 
         with st.expander("Raw parser JSON"):
             st.json(display["raw"])
